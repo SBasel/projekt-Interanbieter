@@ -9,3 +9,6 @@ section angebote --/
 footer/sidepage --/
 
 farbpalette https://colorhunt.co/palette/5800ff0096ff00d7ff72ffff
+Schriftart:
+
+Name des Kunden Bilinmyen
