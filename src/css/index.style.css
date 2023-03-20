@@ -3,3 +3,36 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+header {
+  margin-top: 5em;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  border: 1px black solid;
+}
+nav {
+
+}
+
+ul {
+  display: flex;
+}
+.nav-list {
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    /* margin-left: -90px; */
+    margin: 10px 125px; 
+    
+}
+.nav-atag {
+  text-decoration: none;
+  float: right;
+  font-weight: bold;
+}
+.nav-atag:hover {
+  text-decoration: underline;
+  font-size: larger;
+}
