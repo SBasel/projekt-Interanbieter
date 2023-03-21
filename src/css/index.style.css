@@ -46,7 +46,7 @@ ul {
   font-size: larger;
 }
 * {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
+body {font-family: "Poppins", sans-serif; margin:0}
 .mySlides {display: none}
 img {vertical-align: middle;}
 
@@ -68,6 +68,66 @@ section{
   box-shadow: 10px 10px 20px #0661a2;
 
 }
+.numbertext{
+  position: absolute;
+  left: 100px;
+}
+.texta{
+  color: #5800FF;
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 3px 3px 4px #060606 
+}
+.btn-a {
+ --color: #5800FF;
+ font-family: inherit;
+ display: inline-block;
+ width: 8em;
+ height: 2.6em;
+ line-height: 2.5em;
+ margin: 20px;
+ position: relative;
+ overflow: hidden;
+ border: 2px solid var(--color);
+ transition: color .5s;
+ z-index: 1;
+ font-size: 17px;
+ border-radius: 6px;
+ font-weight: 500;
+ color: var(--color);
+}
+
+.btn-a:before {
+ content: "";
+ position: absolute;
+ z-index: -1;
+ background: var(--color);
+ height: 150px;
+ width: 200px;
+ border-radius: 50%;
+}
+
+.btn-a:hover {
+ color: #fff;
+}
+
+.btn-a:before {
+ top: 100%;
+ left: 100%;
+ transition: all .7s;
+}
+
+.btn-a:hover:before {
+ top: -30px;
+ left: -30px;
+}
+
+.btn-a:active:before {
+ background: #5800FF;
+ transition: background 0s;
+}
+
+
 h1 {
   font-family: "Poppins-Bold";
   display: flex;
@@ -90,7 +150,7 @@ h1 {
   justify-content: center;
 }
 .icons{
-
+ 
 }
 
 /* Next & previous buttons */
