@@ -45,7 +45,7 @@ ul {
   text-decoration: underline;
   font-size: larger;
 }
-* {box-sizing: border-box}
+
 body {font-family: "Poppins", sans-serif; margin:0}
 .mySlides {display: none}
 img {vertical-align: middle;}
