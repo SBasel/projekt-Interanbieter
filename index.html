@@ -96,20 +96,7 @@
               style="width: 100%"
             />
           </div>
-          <div class="mySlides fade">
-            <div class="numbertext">
-              <p class="texta">0,-€</p>
-              <p>Im Vertrag ...</p>
-              <button class="btn-a">Angebot</button>
-            </div>
-            <img
-              class="banner"
-              src="./src/img/handy2 (1).png"
-              style="width: 100%"
-            />
-          </div>
-
-          <div class="mySlides fade">
+              <div class="mySlides fade">
             <div class="numbertext">
               <p class="texta">0,-€</p>
               <p>Im Vertrag ...</p>
@@ -121,20 +108,7 @@
               style="width: 100%"
             />
           </div>
-          <div class="mySlides fade">
-            <div class="numbertext">
-              <p class="texta">0,-€</p>
-              <p>Im Vertrag ...</p>
-              <button class="btn-a">Angebot</button>
-            </div>
-            <img
-              class="banner"
-              src="./src/img/Laptop2.png"
-              style="width: 100%"
-            />
-          </div>
-
-          <div class="mySlides fade">
+              <div class="mySlides fade">
             <div class="numbertext">
               <p class="texta">0,-€</p>
               <p>Im Vertrag ...</p>
@@ -146,20 +120,7 @@
               style="width: 100%"
             />
           </div>
-          <div class="mySlides fade">
-            <div class="numbertext">
-              <p class="texta">0,-€</p>
-              <p>Im Vertrag ...</p>
-              <button class="btn-a">Angebot</button>
-            </div>
-            <img
-              class="banner"
-              src="./src/img/tablet2.png"
-              style="width: 100%"
-            />
-          </div>
-
-          <a class="prev" onclick="plusSlides(-1)">❮</a>
+                 <a class="prev" onclick="plusSlides(-1)">❮</a>
           <a class="next" onclick="plusSlides(1)">❯</a>
           <div class="section-icon">
             <img
@@ -173,7 +134,7 @@
     </main>
     <!-- Links - Ömer Faruk -->
     <div class="links-footer">
-      <section class="links">
+      <div class="links">
         <div class="links-inner">
           <ul>
             <li><h3>Neuigkeiten</h3></li>
@@ -224,7 +185,7 @@
             <li><a href="#">Investoren</a></li>
           </ul>
         </div>
-      </section>
+      </div>
 
       <!-- Footer - Ömer Faruk-->
       <footer class="footer">
@@ -279,10 +240,7 @@
         </ul>
       </div>
     </aside>
-    <script>
-      let slideIndex = 1;
-      let timer;
-      showSlides(slideIndex);
+ 
         <script>
           let slideIndex = 1;
           let timer;
@@ -340,36 +298,7 @@
         }
       });
     </script>
-          function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            if (n > slides.length) {
-              slideIndex = 1;
-            }
-            if (n < 1) {
-              slideIndex = slides.length;
-            }
-            for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";
-            }
-            slides[slideIndex - 1].style.display = "block";
-            clearInterval(timer);
-            timer = setInterval(automaticSlides, 5000);
-          }
-
-          //btn-aside
-
-          const menuButton = document.querySelector("#menu-button");
-          const menuContainer = document.querySelector("#menu-container");
-
-          menuButton.addEventListener("click", function () {
-            if (menuContainer.style.display === "block") {
-              menuContainer.style.display = "none";
-            } else {
-              menuContainer.style.display = "block";
-            }
-          });
-        </script>
+          
       </section>
       <!--...-->
       <article></article>
