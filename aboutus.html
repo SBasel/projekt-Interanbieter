@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About Us</title>
+    <style>
+      @font-face {
+        font-family: "Poppins";
+        src: url("./src/fonts/Poppins-Light.ttf") format("truetype"),
+          url("./src/fonts/Poppins-Medium.ttf") format("truetype"),
+          url("./src/fonts/Poppins-Bold.ttf") format("truetype");
+        font-weight: 300 500 700;
+        font-style: normal;
+      }
+
+      h1 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-size: 3rem;
+        line-height: 1.2;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #0096ff;
+      }
+
+      h2 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 1.2;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #0096ff;
+      }
+
+      h3 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-size: 1.5rem;
+        line-height: 1.2;
+        letter-spacing: 0.05em;
+        text-transform: none;
+        color: #0096ff;
+      }
+
+      p {
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-size: 1.5rem;
+        line-height: 1.2;
+        letter-spacing: 0.05em;
+        text-transform: none;
+        color: #00d7ff;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #0096ff;
+        padding: 2rem;
+        margin-top: 4rem;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-size: 1.2rem;
+        line-height: 1.2;
+        letter-spacing: 0.05em;
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+        border: none;
+        border-radius: 0.5rem;
+      }
+
+      input[type="submit"] {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1.2rem;
+        line-height: 1.2;
+        letter-spacing: 0.05em;
+        background-color: #00d7ff;
+        color: white;
+        padding: 0.5rem 2rem;
+        border: none;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #0096ff;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Willkommen bei unserem umweltbewussten Mobilfunk-Startup!</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2>Unsere Mission</h2>
+        <p>
+          Wir sind ein junges und dynamisches Team, das sich für die Umwelt und
+          Nachhaltigkeit einsetzt. Unser Ziel ist es, eine positive Veränderung
+          im Mobilfunksektor herbeizuführen und einen Beitrag zum Schutz unserer
+          Umwelt zu leisten. Wir möchten nicht nur unseren Kunden
+          umweltfreundliche Optionen anbieten, sondern auch unsere Verantwortung
+          als Unternehmen wahrnehmen, indem wir uns für den Schutz der Natur
+          einsetzen.
+        </p>
+      </section>
+
+      <section>
+        <h2>Unser Engagement für den Naturschutz</h2>
+        <p>
+          Unser Engagement für den Naturschutz geht über die 10% unseres
+          Unternehmensgewinns hinaus, die wir in Naturschutzprojekte in Afrika
+          investieren. Wir setzen uns auch für den Einsatz von erneuerbaren
+          Energien in unseren Geschäftsräumen ein, um unsere CO2-Emissionen zu
+          reduzieren und die Umweltbelastung zu minimieren.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <h3>Kontakt</h3>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">E-Mail:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Nachricht:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Senden</button>
+      </form>
+    </footer>
+  </body>
+</html>
