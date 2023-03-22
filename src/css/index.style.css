@@ -15,10 +15,54 @@
   font-weight: normal;
   font-style: normal;
 }
-
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
+}
+header{
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  margin-bottom: 0.5rem;
+  box-shadow: 10px 10px 20px #0661a2;
+  }
+.nav-flex {
+  display: flex;
+  align-items: center;
+  background-color: #0096FF;
+  padding: 1rem;
+  }
+.nav-right{
+  margin-left: 65em;
+}
+.nav-link {
+  text-decoration: none;
+  color: aliceblue;
+
+  font-weight: bold;
+  margin: 1em;
+}
+.nav-left a {
+  text-shadow: 3px 3px 4px #060606;
+}
+.nav-right a {
+  text-shadow: 3px 3px 4px #060606;
+}
+
+.background-image {
+  height: 300px;
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.nav-icon {
+  width: 16px;
+}
+.nav-logo {
+  width: 35px;
 }
 .mySlides {
   display: none;
@@ -26,18 +70,6 @@ body {
 img {
   vertical-align: middle;
 }
-
-body {
-  font-family: "Poppins", sans-serif;
-  margin: 0;
-}
-.mySlides {
-  display: none;
-}
-img {
-  vertical-align: middle;
-}
-
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
@@ -46,6 +78,7 @@ img {
   padding: 3rem;
 }
 section {
+  margin-bottom: 1rem;
   background: rgb(0, 150, 255);
   background: linear-gradient(
     60deg,
@@ -53,6 +86,7 @@ section {
     rgba(114, 255, 255, 1) 37%,
     rgba(0, 150, 255, 1) 100%
   );
+  box-shadow: 10px 10px 20px #0661a2;
 }
 .numbertext {
   position: absolute;
@@ -60,12 +94,10 @@ section {
 }
 .texta {
   color: #5800ff;
-  color: #5800ff;
   font-size: 3rem;
   font-weight: bold;
   text-shadow: 3px 3px 4px #060606;
-  text-shadow: 3px 3px 4px #060606;
-}
+  }
 .btn-a {
   --color: #5800ff;
   font-family: inherit;
@@ -83,7 +115,6 @@ section {
   border-radius: 6px;
   font-weight: 500;
   color: var(--color);
-
 }
 
 .btn-a:before {
@@ -94,31 +125,26 @@ section {
   height: 150px;
   width: 200px;
   border-radius: 50%;
-
 }
 
 .btn-a:hover {
   color: #fff;
- 
 }
 
 .btn-a:before {
   top: 100%;
   left: 100%;
   transition: all 0.7s;
- 
 }
 
 .btn-a:hover:before {
   top: -30px;
   left: -30px;
-
 }
 
 .btn-a:active:before {
   background: #5800ff;
   transition: background 0s;
-
 }
 
 h1 {
@@ -140,7 +166,6 @@ h1 {
   border-radius: 20px;
 }
 .section-icon {
-
   display: flex;
   margin: 20px;
   justify-content: center;
@@ -175,7 +200,6 @@ h1 {
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
-
 }
 
 /* Caption text */
@@ -363,7 +387,6 @@ aside {
   to {
     opacity: 1;
   }
-  
 }
 
 /* On smaller screens, decrease text size */
