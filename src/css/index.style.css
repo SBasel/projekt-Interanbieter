@@ -9,8 +9,6 @@
   src: url(../fonts/Poppins-Medium.ttf) format("truetype");
   font-weight: normal;
   font-style: normal;
-
-
 }
 
 body {
@@ -22,49 +20,28 @@ body {
 .nav-flex {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  background-color: #5800FF;
+  /* justify-content: space-between; */
+  background-color: #5800ff;
   padding: 1rem;
-  
+}
+
+.nav-right {
+ display: flex;
+ justify-content: space-between;
+ margin-left: 60em;
 }
 
 .nav-link {
   text-decoration: none;
   color: aliceblue;
-  
   font-weight: bold;
   margin: 1em;
-  
 }
+
 .nav-left a {
   text-shadow: 3px 3px 4px #060606;
 }
 
-.nav-linkhover:hover {
-  
-  
- 
-
-}
-
-
 .background-image {
   height: 300px;
-
-}
-
-.hero-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-
-
-.nav-icon {
-width: 16px;
-}
-.nav-logo {
-  width: 35px;
 }
