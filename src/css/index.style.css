@@ -15,35 +15,16 @@
   font-weight: normal;
   font-style: normal;
 }
-header {
-  margin-top: 5em;
-  display: flex;
-  align-items: center;
-  position: sticky;
-  width: 100%;
-  border: 1px black solid;
-}
-nav {
-}
 
-ul {
-  display: flex;
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
 }
-.nav-list {
-  text-transform: uppercase;
-  text-align: center;
-  display: flex;
-  /* margin-left: -90px; */
-  margin: 10px 125px;
+.mySlides {
+  display: none;
 }
-.nav-atag {
-  text-decoration: none;
-  float: right;
-  font-weight: bold;
-}
-.nav-atag:hover {
-  text-decoration: underline;
-  font-size: larger;
+img {
+  vertical-align: middle;
 }
 
 body {
@@ -72,11 +53,6 @@ section {
     rgba(114, 255, 255, 1) 37%,
     rgba(0, 150, 255, 1) 100%
   );
-  margin-top: 16px;
-  margin-bottom: 16px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  box-shadow: 10px 10px 20px #0661a2;
 }
 .numbertext {
   position: absolute;
@@ -84,8 +60,10 @@ section {
 }
 .texta {
   color: #5800ff;
+  color: #5800ff;
   font-size: 3rem;
   font-weight: bold;
+  text-shadow: 3px 3px 4px #060606;
   text-shadow: 3px 3px 4px #060606;
 }
 .btn-a {
@@ -105,6 +83,7 @@ section {
   border-radius: 6px;
   font-weight: 500;
   color: var(--color);
+
 }
 
 .btn-a:before {
@@ -115,26 +94,31 @@ section {
   height: 150px;
   width: 200px;
   border-radius: 50%;
+
 }
 
 .btn-a:hover {
   color: #fff;
+ 
 }
 
 .btn-a:before {
   top: 100%;
   left: 100%;
   transition: all 0.7s;
+ 
 }
 
 .btn-a:hover:before {
   top: -30px;
   left: -30px;
+
 }
 
 .btn-a:active:before {
   background: #5800ff;
   transition: background 0s;
+
 }
 
 h1 {
@@ -148,10 +132,15 @@ h1 {
 }
 
 .mySlides img {
+  text-shadow: 3px 3px 4px #060606;
+}
+
+.mySlides img {
   box-shadow: 10px 10px 20px #0661a2;
   border-radius: 20px;
 }
 .section-icon {
+
   display: flex;
   margin: 20px;
   justify-content: center;
@@ -186,6 +175,7 @@ h1 {
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
+
 }
 
 /* Caption text */
@@ -353,10 +343,7 @@ aside {
 
 /* links and footer */
 .links-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  display: block;
 }
 
 .links-footer a:hover {
@@ -376,6 +363,7 @@ aside {
   to {
     opacity: 1;
   }
+  
 }
 
 /* On smaller screens, decrease text size */
