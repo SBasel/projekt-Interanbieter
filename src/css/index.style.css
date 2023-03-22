@@ -27,6 +27,17 @@ img {
   vertical-align: middle;
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+.mySlides {
+  display: none;
+}
+img {
+  vertical-align: middle;
+}
+
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
@@ -42,6 +53,14 @@ section {
     rgba(114, 255, 255, 1) 37%,
     rgba(0, 150, 255, 1) 100%
   );
+section {
+  background: rgb(0, 150, 255);
+  background: linear-gradient(
+    60deg,
+    rgba(0, 150, 255, 1) 10%,
+    rgba(114, 255, 255, 1) 37%,
+    rgba(0, 150, 255, 1) 100%
+  );
   margin-top: 16px;
   margin-bottom: 16px;
   background-repeat: no-repeat;
@@ -49,16 +68,36 @@ section {
   box-shadow: 10px 10px 20px #0661a2;
 }
 .numbertext {
+.numbertext {
   position: absolute;
   left: 100px;
 }
 .texta {
   color: #5800ff;
+.texta {
+  color: #5800ff;
   font-size: 3rem;
   font-weight: bold;
   text-shadow: 3px 3px 4px #060606;
+  text-shadow: 3px 3px 4px #060606;
 }
 .btn-a {
+  --color: #5800ff;
+  font-family: inherit;
+  display: inline-block;
+  width: 8em;
+  height: 2.6em;
+  line-height: 2.5em;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--color);
+  transition: color 0.5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: var(--color);
   --color: #5800ff;
   font-family: inherit;
   display: inline-block;
@@ -85,13 +124,24 @@ section {
   height: 150px;
   width: 200px;
   border-radius: 50%;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
 }
 
 .btn-a:hover {
   color: #fff;
+  color: #fff;
 }
 
 .btn-a:before {
+  top: 100%;
+  left: 100%;
+  transition: all 0.7s;
   top: 100%;
   left: 100%;
   transition: all 0.7s;
@@ -100,9 +150,13 @@ section {
 .btn-a:hover:before {
   top: -30px;
   left: -30px;
+  top: -30px;
+  left: -30px;
 }
 
 .btn-a:active:before {
+  background: #5800ff;
+  transition: background 0s;
   background: #5800ff;
   transition: background 0s;
 }
@@ -118,9 +172,14 @@ h1 {
 }
 
 .mySlides img {
+  text-shadow: 3px 3px 4px #060606;
+}
+
+.mySlides img {
   box-shadow: 10px 10px 20px #0661a2;
   border-radius: 20px;
 }
+.section-icon {
 .section-icon {
   display: flex;
   margin: 20px;
@@ -153,6 +212,9 @@ h1 {
 }
 
 /* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
@@ -191,6 +253,8 @@ h1 {
   transition: background-color 0.6s ease;
 }
 
+.active,
+.dot:hover {
 .active,
 .dot:hover {
   background-color: #717171;
@@ -343,10 +407,21 @@ aside {
   to {
     opacity: 1;
   }
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
   .prev,
   .next,
   .text {

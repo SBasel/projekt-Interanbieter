@@ -17,9 +17,16 @@
   <body>
     <!--Yahya Icons/Bilder/Logo-->
 
+
     <header>
       <nav>
         <ul>
+          <li class="nav-list">
+            <a href="./linkpage.html" class="nav-atag">Mobilfunk</a>
+          </li>
+          <li class="nav-list">
+            <a href="" class="nav-atag">Internet-Home</a>
+          </li>
           <li class="nav-list">
             <a href="./linkpage.html" class="nav-atag">Mobilfunk</a>
           </li>
@@ -34,12 +41,61 @@
     </header>
 
     <main>
+      <!--+footer-->
+      <aside>
+        <button id="menu-button"><i class="fa fa-phone"></i></button>
+        <div id="menu-container">
+          <ul>
+            <li>
+              <a href="#"
+                >Bestellhotline 08001234567 <br />
+                Mo.-Fr. 8 - 20 Uhr
+                <i class="chevron fa-solid fa-chevron-right"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                >Weitere Kontaktmöglichkeiten<i
+                  class="chevron fa-solid fa-chevron-right"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href="#">
+                Unsere virtuelle Assistenz unterstützt dich bei allen Fragen<i
+                  class="chevron fa-solid fa-chevron-right"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href="#">
+                Bilinmeyen Service-Bereich Die schnelle Online-Hilfe<i
+                  class="chevron fa-solid fa-chevron-right"
+                ></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
       <aside></aside>
       <!--Sebastian-->
 
       <section>
         <h1>Bilinmeyen</h1>
         <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="numbertext">
+              <p class="texta">0,-€</p>
+              <p>Im Vertrag ...</p>
+              <button class="btn-a">Angebot</button>
+            </div>
+            <img
+              class="banner"
+              src="./src/img/handy2 (1).png"
+              style="width: 100%"
+            />
+          </div>
           <div class="mySlides fade">
             <div class="numbertext">
               <p class="texta">0,-€</p>
@@ -65,7 +121,31 @@
               style="width: 100%"
             />
           </div>
+          <div class="mySlides fade">
+            <div class="numbertext">
+              <p class="texta">0,-€</p>
+              <p>Im Vertrag ...</p>
+              <button class="btn-a">Angebot</button>
+            </div>
+            <img
+              class="banner"
+              src="./src/img/Laptop2.png"
+              style="width: 100%"
+            />
+          </div>
 
+          <div class="mySlides fade">
+            <div class="numbertext">
+              <p class="texta">0,-€</p>
+              <p>Im Vertrag ...</p>
+              <button class="btn-a">Angebot</button>
+            </div>
+            <img
+              class="banner"
+              src="./src/img/tablet2.png"
+              style="width: 100%"
+            />
+          </div>
           <div class="mySlides fade">
             <div class="numbertext">
               <p class="texta">0,-€</p>
@@ -203,19 +283,33 @@
       let slideIndex = 1;
       let timer;
       showSlides(slideIndex);
+        <script>
+          let slideIndex = 1;
+          let timer;
+          showSlides(slideIndex);
 
       function plusSlides(n) {
         showSlides((slideIndex += n));
       }
+          function plusSlides(n) {
+            showSlides((slideIndex += n));
+          }
 
       function currentSlide(n) {
         showSlides((slideIndex = n));
       }
+          function currentSlide(n) {
+            showSlides((slideIndex = n));
+          }
 
       function automaticSlides() {
         slideIndex++;
         showSlides(slideIndex);
       }
+          function automaticSlides() {
+            slideIndex++;
+            showSlides(slideIndex);
+          }
 
       function showSlides(n) {
         let i;
@@ -246,5 +340,42 @@
         }
       });
     </script>
+          function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) {
+              slideIndex = 1;
+            }
+            if (n < 1) {
+              slideIndex = slides.length;
+            }
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+            clearInterval(timer);
+            timer = setInterval(automaticSlides, 5000);
+          }
+
+          //btn-aside
+
+          const menuButton = document.querySelector("#menu-button");
+          const menuContainer = document.querySelector("#menu-container");
+
+          menuButton.addEventListener("click", function () {
+            if (menuContainer.style.display === "block") {
+              menuContainer.style.display = "none";
+            } else {
+              menuContainer.style.display = "block";
+            }
+          });
+        </script>
+      </section>
+      <!--...-->
+      <article></article>
+      <article></article>
+    </main>
+    <!--...-->
+    <footer></footer>
   </body>
 </html>
