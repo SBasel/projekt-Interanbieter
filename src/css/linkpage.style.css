@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("../fonts/Poppins-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+header{
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  margin-bottom: 0.5rem;
+  box-shadow: 10px 10px 20px #0661a2;
+  }
+.nav-flex {
+  display: flex;
+  align-items: center;
+  background-color: #0096FF;
+  padding: 1rem;
+  }
+.nav-right{
+  margin-left: 65em;
+}
+.nav-link {
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: bold;
+  margin: 1em;
+}
+.nav-left a {
+  text-shadow: 3px 3px 4px #060606;
+}
+.nav-right a {
+  text-shadow: 3px 3px 4px #060606;
+}
+img {
+  vertical-align: middle;
+}
+.nav-icon {
+  width: 16px;
+}
+.nav-logo {
+  width: 35px;
+}
+
+.card {
+        width: 61.66%;
+        text-align: center;
+        position: relative;
+        cursor: pointer;
+        border-radius: 10px;
+      }
+
+      .content {
+        background: rgb(0, 150, 255);
+        background: linear-gradient(60deg,rgba(0, 150, 255, 1) 10%,
+        rgba(114, 255, 255, 1) 37%,
+        rgba(0, 150, 255, 1) 100%);
+         box-shadow: 10px 10px 20px #0661a2;
+        box-shadow: 10px 10px 20px rgb(21, 129, 206, 0.5);
+        padding: 20px;
+        margin-bottom: 0.5rem;
+      }
+
+      .content .price {
+        color: white;
+        font-weight: 800;
+        font-size: 50px;
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.42);
+      }
+
+      .content .description {
+        color: rgba(255, 255, 255, 0.6);
+        margin-top: 10px;
+        font-size: 14px;
+      }
+
+      .content .title {
+        font-weight: 800;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.64);
+        margin-top: 10px;
+        font-size: 25px;
+        letter-spacing: 1px;
+      }
+
+    .content button {
+        border: none;
+        outline: none;
+        color: rgb(255 255 255);
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 0.75rem;
+        padding: 0.75rem 1.5rem;
+        background-color: rgb(33 150 243);
+        border-radius: 0.5rem;
+        width: 30%;
+        text-shadow: 0px 4px 18px #2c3442;
+      }
+      section {
+        display: flex;
+        justify-content: center;
+      }
+      img {
+  vertical-align: middle;
+}
+      /*---aside--*/
+/* aside btn */
+
+aside {
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  z-index: 999;
+  line-height: 1.3em;
+}
+
+.links-footer a {
+  text-decoration: none;
+  color: #616161;
+}
+[class^="chevron"] {
+  margin-left: 10px;
+}
+
+#menu-button {
+  background-color: #0096ff;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  transform: rotate(-90deg);
+}
+
+#menu-button:hover {
+  transform: scale(1.1);
+}
+
+#menu-container {
+  position: absolute;
+  bottom: 60px;
+  right: 0;
+  width: 200px;
+  background-color: #72ffffd8;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  display: none;
+}
+
+#menu-container ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#menu-container ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s ease-in-out;
+  font-weight: 500;
+}
+
+#menu-container ul li a:hover {
+  background-color: #5800ff;
+  color: #fff;
+}
+
+/* Links */
+.links {
+  background: #f2f2f2;
+  color: #616161;
+  font-size: 12px;
+  padding: 35px 0;
+}
+
+.links-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.links li {
+  line-height: 2.5;
+}
+
+/* Footer */
+.footer {
+  background: #f2f2f2;
+  color: #616161;
+  font-size: 12px;
+  padding: 20px 0;
+}
+
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer div {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.footer div i {
+  margin-right: 10px;
+}
+
+.footer ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer li {
+  margin: 0 30px 20px 0;
+}
+
+/* links and footer */
+.links-footer {
+  display: block;
+}
+
+.links-footer a:hover {
+  color: black;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}

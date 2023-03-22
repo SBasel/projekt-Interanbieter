@@ -1,76 +1,93 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Internet-Angebote</title>
-    <style>
-      .card {
-        width: 91.66%;
-        margin: auto;
-        padding: 20px 1px;
-        margin: 10px 0;
-        text-align: center;
-        position: relative;
-        cursor: pointer;
-
-        border-radius: 10px;
-      }
-
-      .content {
-        background-color: #0096ff;
-        background: linear-gradient(45deg, #0096ff 0%, #2b566e 100%);
-        box-shadow: 10px 10px 20px rgb(21, 129, 206, 0.5);
-        padding: 20px;
-        margin: 10px;
-      }
-
-      .content .price {
-        color: white;
-        font-weight: 800;
-        font-size: 50px;
-        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.42);
-      }
-
-      .content .description {
-        color: rgba(255, 255, 255, 0.6);
-        margin-top: 10px;
-        font-size: 14px;
-      }
-
-      .content .title {
-        font-weight: 800;
-        text-transform: uppercase;
-        color: rgba(255, 255, 255, 0.64);
-        margin-top: 10px;
-        font-size: 25px;
-        letter-spacing: 1px;
-      }
-
-      button {
-        border: none;
-        outline: none;
-        color: rgb(255 255 255);
-        text-transform: uppercase;
-        font-weight: 700;
-        font-size: 0.75rem;
-        padding: 0.75rem 1.5rem;
-        background-color: rgb(33 150 243);
-        border-radius: 0.5rem;
-        width: 90%;
-        text-shadow: 0px 4px 18px #2c3442;
-      }
-    </style>
+    <link rel="stylesheet" href="./src/css/linkpage.style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Bilinmeyen Link</title>
   </head>
   <body>
+    <!--Yahya Icons/Bilder/Logo-->
+
+
+    <header>
+
+        <nav class="nav-flex">
+          <div>
+            <img class="nav-logo" src="./src/favicon/favicon.ico" alt=""> 
+          </div>
+          <div class="nav-left">
+            
+            
+            <a class="nav-link" href="index.html">Home</a>
+
+            <a class="nav-link" href="linkpage.html">Angebote</a>
+
+            <a class="nav-link" href="#">Mobilfunk</a>
+
+            <a class="nav-link" href="#">Internet-Home</a>
+
+          </div>
+          <div class="nav-right">
+  
+            <a class="nav-link" href="aboutus.html"><i class="fa-solid fa-user" style="color: #000000;"></i> About Us </a>
+            <a class="nav-link" href="#"><i class="fa-solid fa-bag-shopping" style="color: #050505;"></i>Warenkorb</a>
+          </div>
+        </nav>
+      </header>
+      <main>
+      <!--+footer-->
+      <aside>
+        <button id="menu-button"><i class="fa fa-phone"></i></button>
+        <div id="menu-container">
+          <ul>
+            <li>
+              <a href="#"
+                >Bestellhotline 08001234567 <br />
+                Mo.-Fr. 8 - 20 Uhr
+                <i class="chevron fa-solid fa-chevron-right"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                >Weitere Kontaktmöglichkeiten<i
+                  class="chevron fa-solid fa-chevron-right"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href="#">
+                Unsere virtuelle Assistenz unterstützt dich bei allen Fragen<i
+                  class="chevron fa-solid fa-chevron-right"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href="#">
+                Bilinmeyen Service-Bereich Die schnelle Online-Hilfe<i
+                  class="chevron fa-solid fa-chevron-right"
+                ></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <section>
     <div class="card">
       <div class="content">
         <div class="title">Studenten edition</div>
         <div class="price">20€</div>
         <div class="description">Studenten Tarif mit schnellem Internet</div>
 
-        <button>jetzt Bestellen</button>
+        <button class="btn-lp">jetzt Bestellen</button>
       </div>
 
       <div class="content">
@@ -78,7 +95,7 @@
         <div class="price">35€</div>
         <div class="description">Pro Tarif mit schnellem Internet</div>
 
-        <button>jetzt Bestellen</button>
+        <button class="btn-lp">jetzt Bestellen</button>
       </div>
 
       <div class="content">
@@ -86,8 +103,176 @@
         <div class="price">50€</div>
         <div class="description">Premium Tarif mit schnellem Internet</div>
 
-        <button>jetzt Bestellen</button>
+        <button class="btn-lp">jetzt Bestellen</button>
       </div>
     </div>
+    </section>
+    <!-- Links - Ömer Faruk -->
+    <div class="links-footer">
+      <div class="links">
+        <div class="links-inner">
+          <ul>
+            <li><h3>Neuigkeiten</h3></li>
+            <li><a href="#">Kleine Unternehmen</a></li>
+            <li><a href="#">Visual Studio</a></li>
+            <li><a href="#">Rückgaben</a></li>
+            <li><a href="#">Abfallverwertung</a></li>
+            <li><a href="#">Weitere Informationen</a></li>
+          </ul>
+          <ul>
+            <li><h3>Bilinmeyen Store</h3></li>
+            <li><a href="#">Kontoprofil</a></li>
+            <li><a href="#">Download Center</a></li>
+            <li><a href="#">Bilinmeyen Store-Support</a></li>
+            <li><a href="#">Rückgaben</a></li>
+            <li><a href="#">Bestellnachverfolgung</a></li>
+          </ul>
+          <ul>
+            <li><h3>Bildungswesen</h3></li>
+            <li><a href="#">Bildung</a></li>
+            <li><a href="#">Geräte für den Bildungsbereich</a></li>
+            <li><a href="#">For Education</a></li>
+            <li><a href="#">Angebote für Studenten</a></li>
+            <li><a href="#"> Studenten</a></li>
+          </ul>
+          <ul>
+            <li><h3>Unternehmen</h3></li>
+            <li><a href="#">Cloud</a></li>
+            <li><a href="#">Security</a></li>
+            <li><a href="#">Dynamics</a></li>
+            <li><a href="#">Branchen</a></li>
+            <li><a href="#">Kleine Unternehmen</a></li>
+          </ul>
+          <ul>
+            <li><h3>Entwicklung & IT</h3></li>
+            <li><a href="#">Developer Center</a></li>
+            <li><a href="#">Dokumentation</a></li>
+            <li><a href="#">AppSource</a></li>
+            <li><a href="#">Visual Studio</a></li>
+            <li><a href="#">Nachhaltigkeit</a></li>
+          </ul>
+          <ul>
+            <li><h3>Im Unternehmen</h3></li>
+            <li><a href="#">Jobs & Karriere</a></li>
+            <li><a href="#">Das Unternehmen Microsoft</a></li>
+            <li><a href="#">Unternehmensnachricten</a></li>
+            <li><a href="#">Datenschutz bei Microsoft</a></li>
+            <li><a href="#">Investoren</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer - Ömer Faruk-->
+      <footer class="footer">
+        <div class="footer-inner">
+          <div><i class="fas fa-globe fa-2x"></i> Deutsch (Deutschland)</div>
+          <ul>
+            <li><a href="#"> Abo kündigen</a></li>
+            <li><a href="#"> Impressum</a></li>
+            <li><a href="#">Datenschutz</a></li>
+            <li><a href="#">Cookies verwalten</a></li>
+            <li><a href="#">Nutzungsbedingungen</a></li>
+
+            <li><a href="#">&copy; Berlin 2023</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <!-- aside-btn -->
+    <aside>
+      <button id="menu-button"><i class="fa fa-phone"></i></button>
+      <div id="menu-container">
+        <ul>
+          <li>
+            <a href="#"
+              >Bestellhotline 08001234567 <br />
+              Mo.-Fr. 8 - 20 Uhr
+              <i class="chevron fa-solid fa-chevron-right"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#"
+              >Weitere Kontaktmöglichkeiten<i
+                class="chevron fa-solid fa-chevron-right"
+              ></i
+            ></a>
+          </li>
+          <li>
+            <a href="#">
+              Unsere virtuelle Assistenz unterstützt dich bei allen Fragen<i
+                class="chevron fa-solid fa-chevron-right"
+              ></i
+            ></a>
+          </li>
+          <li>
+            <a href="#">
+              Bilinmeyen Service-Bereich Die schnelle Online-Hilfe<i
+                class="chevron fa-solid fa-chevron-right"
+              ></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+ 
+        <script>
+          let slideIndex = 1;
+          let timer;
+          showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+          function plusSlides(n) {
+            showSlides((slideIndex += n));
+          }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+          function currentSlide(n) {
+            showSlides((slideIndex = n));
+          }
+
+      function automaticSlides() {
+        slideIndex++;
+        showSlides(slideIndex);
+      }
+          function automaticSlides() {
+            slideIndex++;
+            showSlides(slideIndex);
+          }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slides[slideIndex - 1].style.display = "block";
+        clearInterval(timer);
+        timer = setInterval(automaticSlides, 5000);
+      }
+
+      //aside-btn
+      const menuButton = document.querySelector("#menu-button");
+      const menuContainer = document.querySelector("#menu-container");
+
+      menuButton.addEventListener("click", function () {
+        if (menuContainer.style.display === "block") {
+          menuContainer.style.display = "none";
+        } else {
+          menuContainer.style.display = "block";
+        }
+      });
+    </script>
+    </main>
   </body>
 </html>

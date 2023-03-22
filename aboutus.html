@@ -1,108 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/aboutus.style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>About Us</title>
-    <style>
-      @font-face {
-        font-family: "Poppins";
-        src: url("./src/fonts/Poppins-Light.ttf") format("truetype"),
-          url("./src/fonts/Poppins-Medium.ttf") format("truetype"),
-          url("./src/fonts/Poppins-Bold.ttf") format("truetype");
-        font-weight: 300 500 700;
-        font-style: normal;
-      }
-
-      h1 {
-        font-family: "Poppins", sans-serif;
-        font-weight: 700;
-        font-size: 3rem;
-        line-height: 1.2;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        color: #0096ff;
-      }
-
-      h2 {
-        font-family: "Poppins", sans-serif;
-        font-weight: 500;
-        font-size: 2rem;
-        line-height: 1.2;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        color: #0096ff;
-      }
-
-      h3 {
-        font-family: "Poppins", sans-serif;
-        font-weight: 300;
-        font-size: 1.5rem;
-        line-height: 1.2;
-        letter-spacing: 0.05em;
-        text-transform: none;
-        color: #0096ff;
-      }
-
-      p {
-        font-family: "Poppins", sans-serif;
-        font-weight: 300;
-        font-size: 1.5rem;
-        line-height: 1.2;
-        letter-spacing: 0.05em;
-        text-transform: none;
-        color: #00d7ff;
-      }
-
-      form {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: #0096ff;
-        padding: 2rem;
-        margin-top: 4rem;
-      }
-
-      input[type="text"],
-      input[type="email"],
-      textarea {
-        font-family: "Poppins", sans-serif;
-        font-weight: 300;
-        font-size: 1.2rem;
-        line-height: 1.2;
-        letter-spacing: 0.05em;
-        padding: 0.5rem;
-        margin-bottom: 1rem;
-        border: none;
-        border-radius: 0.5rem;
-      }
-
-      input[type="submit"] {
-        font-family: "Poppins", sans-serif;
-        font-weight: 500;
-        font-size: 1.2rem;
-        line-height: 1.2;
-        letter-spacing: 0.05em;
-        background-color: #00d7ff;
-        color: white;
-        padding: 0.5rem 2rem;
-        border: none;
-        border-radius: 0.5rem;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-      }
-
-      input[type="submit"]:hover {
-        background-color: #0096ff;
-      }
-    </style>
   </head>
   <body>
-    <header>
-      <h1>Willkommen bei unserem umweltbewussten Mobilfunk-Startup!</h1>
-    </header>
+    <!--Yahya Icons/Bilder/Logo-->
 
-    <main>
-      <section>
+
+    <header>
+
+        <nav class="nav-flex">
+          <div>
+            <img class="nav-logo" src="./src/favicon/favicon.ico" alt=""> 
+          </div>
+          <div class="nav-left">
+            
+            
+            <a class="nav-link" href="index.html">Home</a>
+
+            <a class="nav-link" href="linkpage.html">Angebote</a>
+
+            <a class="nav-link" href="#">Mobilfunk</a>
+
+            <a class="nav-link" href="#">Internet-Home</a>
+
+          </div>
+          <div class="nav-right">
+  
+            <a class="nav-link" href="aboutus.html"><i class="fa-solid fa-user" style="color: #000000;"></i> About Us </a>
+            <a class="nav-link" href="#"><i class="fa-solid fa-bag-shopping" style="color: #050505;"></i>Warenkorb</a>
+          </div>
+        </nav>
+      </header>
+   
+      
+      <main class="main-ab">
+        <h1>Willkommen bei unserem umweltbewussten Mobilfunk-Startup!</h1>
+      <aside>
+        <button id="menu-button"><i class="fa fa-phone"></i></button>
+        <div id="menu-container">
+          <ul>
+            <li>
+              <a href="#"
+                >Bestellhotline 08001234567 <br />
+                Mo.-Fr. 8 - 20 Uhr
+                <i class="chevron fa-solid fa-chevron-right"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                >Weitere Kontaktmöglichkeiten<i
+                  class="chevron fa-solid fa-chevron-right"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href="#">
+                Unsere virtuelle Assistenz unterstützt dich bei allen Fragen<i
+                  class="chevron fa-solid fa-chevron-right"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href="#">
+                Bilinmeyen Service-Bereich Die schnelle Online-Hilfe<i
+                  class="chevron fa-solid fa-chevron-right"
+                ></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+        <section class="section-ab">
+          <div>
         <h2>Unsere Mission</h2>
         <p>
           Wir sind ein junges und dynamisches Team, das sich für die Umwelt und
@@ -113,9 +94,8 @@
           als Unternehmen wahrnehmen, indem wir uns für den Schutz der Natur
           einsetzen.
         </p>
-      </section>
-
-      <section>
+        </div>
+     <div>
         <h2>Unser Engagement für den Naturschutz</h2>
         <p>
           Unser Engagement für den Naturschutz geht über die 10% unseres
@@ -124,11 +104,12 @@
           Energien in unseren Geschäftsräumen ein, um unsere CO2-Emissionen zu
           reduzieren und die Umweltbelastung zu minimieren.
         </p>
-      </section>
-    </main>
-    <footer>
-      <h3>Kontakt</h3>
+     </div>
+    
+    <div>
+      
       <form>
+        <h3>Kontakt</h3>
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required />
 
@@ -140,6 +121,174 @@
 
         <button type="submit">Senden</button>
       </form>
-    </footer>
+      </div>
+      <section>
+   </main>
+    <!-- Links - Ömer Faruk -->
+    <div class="links-footer">
+      <div class="links">
+        <div class="links-inner">
+          <ul>
+            <li><h3>Neuigkeiten</h3></li>
+            <li><a href="#">Kleine Unternehmen</a></li>
+            <li><a href="#">Visual Studio</a></li>
+            <li><a href="#">Rückgaben</a></li>
+            <li><a href="#">Abfallverwertung</a></li>
+            <li><a href="#">Weitere Informationen</a></li>
+          </ul>
+          <ul>
+            <li><h3>Bilinmeyen Store</h3></li>
+            <li><a href="#">Kontoprofil</a></li>
+            <li><a href="#">Download Center</a></li>
+            <li><a href="#">Bilinmeyen Store-Support</a></li>
+            <li><a href="#">Rückgaben</a></li>
+            <li><a href="#">Bestellnachverfolgung</a></li>
+          </ul>
+          <ul>
+            <li><h3>Bildungswesen</h3></li>
+            <li><a href="#">Bildung</a></li>
+            <li><a href="#">Geräte für den Bildungsbereich</a></li>
+            <li><a href="#">For Education</a></li>
+            <li><a href="#">Angebote für Studenten</a></li>
+            <li><a href="#"> Studenten</a></li>
+          </ul>
+          <ul>
+            <li><h3>Unternehmen</h3></li>
+            <li><a href="#">Cloud</a></li>
+            <li><a href="#">Security</a></li>
+            <li><a href="#">Dynamics</a></li>
+            <li><a href="#">Branchen</a></li>
+            <li><a href="#">Kleine Unternehmen</a></li>
+          </ul>
+          <ul>
+            <li><h3>Entwicklung & IT</h3></li>
+            <li><a href="#">Developer Center</a></li>
+            <li><a href="#">Dokumentation</a></li>
+            <li><a href="#">AppSource</a></li>
+            <li><a href="#">Visual Studio</a></li>
+            <li><a href="#">Nachhaltigkeit</a></li>
+          </ul>
+          <ul>
+            <li><h3>Im Unternehmen</h3></li>
+            <li><a href="#">Jobs & Karriere</a></li>
+            <li><a href="#">Das Unternehmen Microsoft</a></li>
+            <li><a href="#">Unternehmensnachricten</a></li>
+            <li><a href="#">Datenschutz bei Microsoft</a></li>
+            <li><a href="#">Investoren</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer - Ömer Faruk-->
+      <footer class="footer">
+        <div class="footer-inner">
+          <div><i class="fas fa-globe fa-2x"></i> Deutsch (Deutschland)</div>
+          <ul>
+            <li><a href="#"> Abo kündigen</a></li>
+            <li><a href="#"> Impressum</a></li>
+            <li><a href="#">Datenschutz</a></li>
+            <li><a href="#">Cookies verwalten</a></li>
+            <li><a href="#">Nutzungsbedingungen</a></li>
+
+            <li><a href="#">&copy; Berlin 2023</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <!-- aside-btn -->
+    <aside>
+      <button id="menu-button"><i class="fa fa-phone"></i></button>
+      <div id="menu-container">
+        <ul>
+          <li>
+            <a href="#"
+              >Bestellhotline 08001234567 <br />
+              Mo.-Fr. 8 - 20 Uhr
+              <i class="chevron fa-solid fa-chevron-right"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#"
+              >Weitere Kontaktmöglichkeiten<i
+                class="chevron fa-solid fa-chevron-right"
+              ></i
+            ></a>
+          </li>
+          <li>
+            <a href="#">
+              Unsere virtuelle Assistenz unterstützt dich bei allen Fragen<i
+                class="chevron fa-solid fa-chevron-right"
+              ></i
+            ></a>
+          </li>
+          <li>
+            <a href="#">
+              Bilinmeyen Service-Bereich Die schnelle Online-Hilfe<i
+                class="chevron fa-solid fa-chevron-right"
+              ></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+ 
+        <script>
+          let slideIndex = 1;
+          let timer;
+          showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+          function plusSlides(n) {
+            showSlides((slideIndex += n));
+          }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+          function currentSlide(n) {
+            showSlides((slideIndex = n));
+          }
+
+      function automaticSlides() {
+        slideIndex++;
+        showSlides(slideIndex);
+      }
+          function automaticSlides() {
+            slideIndex++;
+            showSlides(slideIndex);
+          }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slides[slideIndex - 1].style.display = "block";
+        clearInterval(timer);
+        timer = setInterval(automaticSlides, 5000);
+      }
+
+      //aside-btn
+      const menuButton = document.querySelector("#menu-button");
+      const menuContainer = document.querySelector("#menu-container");
+
+      menuButton.addEventListener("click", function () {
+        if (menuContainer.style.display === "block") {
+          menuContainer.style.display = "none";
+        } else {
+          menuContainer.style.display = "block";
+        }
+      });
+    </script>
   </body>
 </html>
