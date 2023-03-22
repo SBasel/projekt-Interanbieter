@@ -42,6 +42,17 @@ header{
 .nav-right{
   margin-left: 65em;
 }
+.nav-link i {
+  color: whitesmoke;
+  padding: 0.5rem;
+}
+.nav-link i:hover {
+  color: whitesmoke;
+  color: #0096FF;
+}
+.nav-link i::after{
+  content: "";
+}
 .nav-link {
   text-decoration: none;
   color: aliceblue;
@@ -50,6 +61,18 @@ header{
 }
 .nav-link:hover{
   color:#0096FF;
+}
+.nav-link-r {
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: bold;
+  margin: 1em;
+}
+.nav-link-r:hover{
+  color:#0096FF;
+}
+.nav-link-r::before{
+  counter-reset: "";
 }
 .nav-left a {
   text-shadow: 3px 3px 4px #060606;
@@ -66,6 +89,9 @@ header{
 }
 .nav-logo {
   width: 35px;
+  border: solid 1px whitesmoke;
+  border-radius: 20%;
+  box-shadow: 10px 10px 20px #0661a2;
 }
 .mySlides {
   display: none;
@@ -158,6 +184,14 @@ h1 {
   justify-content: center;
   color: rgba(255, 255, 255, 0.999);
   text-shadow: 3px 3px 4px #060606;
+}
+.imgh1{
+  height: 100px;
+  border: solid 2px whitesmoke;
+  margin-top: 1rem;
+ margin-right: 0.5rem;
+  border-radius: 20%;
+  box-shadow: 10px 10px 20px #0661a2;
 }
 
 .mySlides img {
