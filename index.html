@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/css/index.style.css">
+   <link rel="stylesheet" href="./src/css/index.style.css">
     <title>Bilinmeyen Home</title>
   </head>
   <body>
@@ -13,7 +13,7 @@
     <header>
       <nav>
         <ul>
-          <li class="nav-list"><a href="" class="nav-atag">Mobilfunk</a></li>
+          <li class="nav-list"><a href="./linkpage.html" class="nav-atag">Mobilfunk</a></li>
           <li class="nav-list"><a href="" class="nav-atag">Internet-Home</a></li>
           <li class="nav-list"><a href="" class="nav-atag">Angebote</a></li>
           <li class="nav-list"><a href="" class="nav-atag">Geräte</a></li>
@@ -23,10 +23,75 @@
     </header>
 
     <main>
-      <!--+footer-->
+
+    
+
       <aside></aside>
       <!--Sebastian-->
-      <section></section>
+      
+      <section>
+        <h1>Bilinmeyen</h1>
+        <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext"><p class="texta" >0,-€</p><p>Im Vertrag ...</p><button class="btn-a" >Angebot</button></div>
+  <img class="banner" src="./src/img/handy2 (1).png" style="width:100%">
+ 
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"><p class="texta" >0,-€</p><p>Im Vertrag ...</p><button class="btn-a">Angebot</button></div>
+  <img class="banner" src="./src/img/Laptop2.png" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"><p class="texta" >0,-€</p><p>Im Vertrag ...</p><button class="btn-a">Angebot</button></div>
+  <img class="banner" src="./src/img/tablet2.png" style="width:100%">
+ 
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+<div class="section-icon">
+<img class="icons" src="./src/icon-fonts/home_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+</div>
+</div>
+
+ <script>
+let slideIndex = 1;
+let timer;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function automaticSlides() {
+  slideIndex++;
+  showSlides(slideIndex);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slides[slideIndex-1].style.display = "block";  
+  clearInterval(timer);
+  timer = setInterval(automaticSlides, 5000);
+}
+</script>
+
+
+      </section>
       <!--...-->
       <article></article>
       <article></article>
