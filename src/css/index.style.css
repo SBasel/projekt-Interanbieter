@@ -19,21 +19,21 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 0;
 }
-header{
+header {
   position: sticky;
   top: 0;
   z-index: 2;
   margin-bottom: 0.5rem;
   box-shadow: 10px 10px 20px #0661a2;
-  }
+}
 .nav-flex {
   display: flex;
   align-items: center;
   background: rgb(255, 255, 255);
   box-shadow: 10px 10px 20px #0661a2;
   padding: 1rem;
-  }
-.nav-right{
+}
+.nav-right {
   margin-left: 65em;
 }
 .nav-link i {
@@ -44,7 +44,7 @@ header{
   color: #0096FF;
   color: #0096FF;
 }
-.nav-link i::after{
+.nav-link i::after {
   content: "";
 }
 .nav-link {
@@ -53,8 +53,8 @@ header{
   font-weight: bold;
   margin: 1em;
 }
-.nav-link:hover{
-  color:#0096FF;
+.nav-link:hover {
+  color: #0096ff;
 }
 .nav-link-r {
   text-decoration: none;
@@ -62,10 +62,10 @@ header{
   font-weight: bold;
   margin: 1em;
 }
-.nav-link-r:hover{
-  color:#0096FF;
+.nav-link-r:hover {
+  color: #0096ff;
 }
-.nav-link-r::before{
+.nav-link-r::before {
   counter-reset: "";
 }
 
@@ -93,7 +93,6 @@ img {
   max-width: 1000px;
   position: relative;
   margin: auto;
-  
 }
 section {
   margin-bottom: 1rem;
@@ -116,9 +115,9 @@ section {
   font-size: 3rem;
   font-weight: bold;
   text-shadow: 3px 3px 4px #060606;
-  }
+}
 .btn-a {
-  --color: #0096FF;
+  --color: #0096ff;
   font-family: inherit;
   display: inline-block;
   width: 8em;
@@ -174,11 +173,11 @@ h1 {
   color: rgba(255, 255, 255, 0.999);
   text-shadow: 3px 3px 4px #060606;
 }
-.imgh1{
+.imgh1 {
   height: 100px;
   border: solid 2px whitesmoke;
   margin-top: 1rem;
- margin-right: 0.5rem;
+  margin-right: 0.5rem;
   border-radius: 20%;
   box-shadow: 10px 10px 20px #0661a2;
 }
@@ -195,17 +194,16 @@ h1 {
   display: flex;
   margin: 20px;
   justify-content: space-evenly;
-  
 }
-.section-link{
+.section-link {
   text-decoration: none;
   color: aliceblue;
   font-weight: bold;
   margin: 1em;
   text-shadow: 3px 3px 4px #060606;
-  }
-.section-link:hover{
-  color: #0096FF;
+}
+.section-link:hover {
+  color: #0096ff;
 }
 .section-link i {
   font-size: 4rem;
@@ -234,14 +232,14 @@ h1 {
   top: 250px;
   border-radius: 3px 0 0 3px;
 }
-.prev{
+.prev {
   top: 250px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-  background-color:#0096ff
+  background-color: #0096ff;
 }
 
 /* Caption text */
@@ -324,7 +322,7 @@ aside {
   width: 200px;
   background-color: #72ffffd8;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
+  border-radius: 10px;
   display: none;
 }
 
@@ -340,12 +338,26 @@ aside {
   text-decoration: none;
   color: #333;
   transition: all 0.3s ease-in-out;
-  font-weight: 500;
+  font-size: small;
+  letter-spacing: 0.5px;
 }
 
 #menu-container ul li a:hover {
-  background-color: #5800ff;
+  background-color: #5900ffe3;
   color: #fff;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+/* icon effect */
+#menu-container li {
+  position: relative;
+}
+
+#menu-container li:hover [class^="chevron"] {
+  transition: all 0.3s ease;
+  transform: translateX(10px);
+  font-size: medium;
 }
 
 /* Links */
