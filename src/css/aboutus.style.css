@@ -19,33 +19,74 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 0;
 }
-header{
+header {
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 2;
   margin-bottom: 0.5rem;
-  box-shadow: 10px 10px 20px #0661a2;
-  }
+  
+}
 .nav-flex {
   display: flex;
   align-items: center;
-  background-color: #0096FF;
+  background: rgb(255, 255, 255);
+  box-shadow: 10px 10px 10px #0661a2;
   padding: 1rem;
-  }
+}
+.nav-mid{
+  width: 55%;
+}
 .nav-right{
-  margin-left: 65em;
+  
+}
+.nav-link i {
+  color: #0096FF;
+  padding: 0.5rem;
+}
+.nav-link i:hover {
+  color: #0096FF;
+}
+.nav-link i::after {
+  content: "";
 }
 .nav-link {
   text-decoration: none;
-  color: aliceblue;
+  color: #0096FF;
   font-weight: bold;
   margin: 1em;
 }
-.nav-left a {
-  text-shadow: 3px 3px 4px #060606;
+.nav-link:hover {
+  color: #72FFFF
 }
-.nav-right a {
-  text-shadow: 3px 3px 4px #060606;
+.nav-link-r {
+  text-decoration: none;
+  color: #0096FF;
+  font-weight: bold;
+  margin: 1em;
+}
+.nav-link-r:hover {
+  color: #72FFFF;
+}
+.nav-link-r::before {
+  counter-reset: "";
+}
+
+/*---Main Section--*/
+
+.nav-icon {
+  width: 16px;
+}
+.nav-logo {
+  width: 35px;
+  border: solid 1px whitesmoke;
+  border-radius: 20%;
+}
+.ms-back{
+  background-image: url(../img/section-back.png);
+}
+img {
+  vertical-align: middle;
+
 }
 .section-ab {
     display: flex;
@@ -185,7 +226,7 @@ img {
         background-color: #0096ff;
       }
      
-      /*---aside--*/
+/*---aside--*/
 /* aside btn */
 
 aside {
@@ -228,7 +269,7 @@ aside {
   width: 200px;
   background-color: #72ffffd8;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
+  border-radius: 10px;
   display: none;
 }
 
@@ -244,12 +285,26 @@ aside {
   text-decoration: none;
   color: #333;
   transition: all 0.3s ease-in-out;
-  font-weight: 500;
+  font-size: small;
+  letter-spacing: 0.5px;
 }
 
 #menu-container ul li a:hover {
-  background-color: #5800ff;
+  background-color: #5900ffe3;
   color: #fff;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+/* icon effect */
+#menu-container li {
+  position: relative;
+}
+
+#menu-container li:hover [class^="chevron"] {
+  transition: all 0.3s ease;
+  transform: translateX(10px);
+  font-size: medium;
 }
 
 /* Links */
