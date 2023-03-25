@@ -40,42 +40,7 @@
       
       <main class="main-ab">
         <h1>Willkommen bei unserem umweltbewussten Mobilfunk-Startup!</h1>
-      <aside>
-        <button id="menu-button"><i class="fa fa-phone"></i></button>
-        <div id="menu-container">
-          <ul>
-            <li>
-              <a href="#"
-                >Bestellhotline 08001234567 <br />
-                Mo.-Fr. 8 - 20 Uhr
-                <i class="chevron fa-solid fa-chevron-right"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#"
-                >Weitere Kontaktmöglichkeiten<i
-                  class="chevron fa-solid fa-chevron-right"
-                ></i
-              ></a>
-            </li>
-            <li>
-              <a href="#">
-                Unsere virtuelle Assistenz unterstützt dich bei allen Fragen<i
-                  class="chevron fa-solid fa-chevron-right"
-                ></i
-              ></a>
-            </li>
-            <li>
-              <a href="#">
-                Bilinmeyen Service-Bereich Die schnelle Online-Hilfe<i
-                  class="chevron fa-solid fa-chevron-right"
-                ></i
-              ></a>
-            </li>
-          </ul>
-        </div>
-      </aside>
-        <section class="section-ab">
+            <section class="section-ab">
           <div>
         <h2>Unsere Mission</h2>
         <p>
@@ -117,7 +82,7 @@
       </div>
       <section>
    </main>
-  <!-- Links - Ömer Faruk -->
+   <!-- Links - Ömer Faruk -->
     <div class="links-footer">
       <div class="links">
         <div class="links-inner">
@@ -129,6 +94,7 @@
             <li><a href="./error404.html">Abfallverwertung</a></li>
             <li><a href="./error404.html">Weitere Informationen</a></li>
           </ul>
+          
           <ul>
             <li><h3>Bilinmeyen Store</h3></li>
             <li><a href="./error404.html">Kontoprofil</a></li>
@@ -182,7 +148,6 @@
             <li><a href="./error404.html">Datenschutz</a></li>
             <li><a href="./error404.html">Cookies verwalten</a></li>
             <li><a href="./error404.html">Nutzungsbedingungen</a></li>
-
             <li><a href="./error404.html">&copy; Berlin 2023</a></li>
           </ul>
         </div>
@@ -227,49 +192,7 @@
     </aside>
  
         <script>
-          let slideIndex = 1;
-          let timer;
-          showSlides(slideIndex);
-
-      function plusSlides(n) {
-        showSlides((slideIndex += n));
-      }
-          function plusSlides(n) {
-            showSlides((slideIndex += n));
-          }
-
-      function currentSlide(n) {
-        showSlides((slideIndex = n));
-      }
-          function currentSlide(n) {
-            showSlides((slideIndex = n));
-          }
-
-      function automaticSlides() {
-        slideIndex++;
-        showSlides(slideIndex);
-      }
-          function automaticSlides() {
-            slideIndex++;
-            showSlides(slideIndex);
-          }
-
-      function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        if (n > slides.length) {
-          slideIndex = 1;
-        }
-        if (n < 1) {
-          slideIndex = slides.length;
-        }
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        slides[slideIndex - 1].style.display = "block";
-        clearInterval(timer);
-        timer = setInterval(automaticSlides, 5000);
-      }
+          
 
       //aside-btn
       const menuButton = document.querySelector("#menu-button");

@@ -2,8 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/css/linkpage.style.css" />
+    <link rel="stylesheet" href="./src/css/index.style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -11,13 +12,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Bilinmeyen Link</title>
+    <title>Bilinmeyen Home</title>
   </head>
   <body>
     <!--Yahya Icons/Bilder/Logo-->
 
 
-   <header>
+    <header>
 
         <nav class="nav-flex">
           <div class="nav-left">
@@ -36,10 +37,13 @@
         </nav>
       </header>
 
-      <main>
-      <!--+footer-->
-      <section>
-    <div class="card">
+    <main>
+      
+      
+      
+    </main>
+    <article>
+      <div class="card">
       <div class="content">
         <div class="title">Studenten edition</div>
         <div class="price">20€</div>
@@ -63,10 +67,59 @@
 
         <button class="btn-lp">jetzt Bestellen</button>
       </div>
-    </div>
-    </section>
-    </main>
- <!-- Links - Ömer Faruk -->
+      <div class="card">
+      <div class="content">
+        <div class="title">Studenten edition</div>
+        <div class="price">20€</div>
+        <div class="description">Studenten Tarif mit schnellem Internet</div>
+
+        <button class="btn-lp">jetzt Bestellen</button>
+      </div>
+
+      <div class="content">
+        <div class="title">Pro edition</div>
+        <div class="price">35€</div>
+        <div class="description">Pro Tarif mit schnellem Internet</div>
+
+        <button class="btn-lp">jetzt Bestellen</button>
+      </div>
+
+      <div class="content">
+        <div class="title">Premium edition</div>
+        <div class="price">50€</div>
+        <div class="description">Premium Tarif mit schnellem Internet</div>
+
+        <button class="btn-lp">jetzt Bestellen</button>
+      </div>
+
+      <div class="card">
+      <div class="content">
+        <div class="title">Studenten edition</div>
+        <div class="price">20€</div>
+        <div class="description">Studenten Tarif mit schnellem Internet</div>
+
+        <button class="btn-lp">jetzt Bestellen</button>
+      </div>
+
+      <div class="content">
+        <div class="title">Pro edition</div>
+        <div class="price">35€</div>
+        <div class="description">Pro Tarif mit schnellem Internet</div>
+
+        <button class="btn-lp">jetzt Bestellen</button>
+      </div>
+
+      <div class="content">
+        <div class="title">Premium edition</div>
+        <div class="price">50€</div>
+        <div class="description">Premium Tarif mit schnellem Internet</div>
+
+        <button class="btn-lp">jetzt Bestellen</button>
+      </div>
+
+
+    </article>
+    <!-- Links - Ömer Faruk -->
     <div class="links-footer">
       <div class="links">
         <div class="links-inner">
@@ -78,6 +131,7 @@
             <li><a href="./error404.html">Abfallverwertung</a></li>
             <li><a href="./error404.html">Weitere Informationen</a></li>
           </ul>
+          
           <ul>
             <li><h3>Bilinmeyen Store</h3></li>
             <li><a href="./error404.html">Kontoprofil</a></li>
@@ -131,7 +185,6 @@
             <li><a href="./error404.html">Datenschutz</a></li>
             <li><a href="./error404.html">Cookies verwalten</a></li>
             <li><a href="./error404.html">Nutzungsbedingungen</a></li>
-
             <li><a href="./error404.html">&copy; Berlin 2023</a></li>
           </ul>
         </div>
@@ -176,49 +229,7 @@
     </aside>
  
         <script>
-          let slideIndex = 1;
-          let timer;
-          showSlides(slideIndex);
-
-      function plusSlides(n) {
-        showSlides((slideIndex += n));
-      }
-          function plusSlides(n) {
-            showSlides((slideIndex += n));
-          }
-
-      function currentSlide(n) {
-        showSlides((slideIndex = n));
-      }
-          function currentSlide(n) {
-            showSlides((slideIndex = n));
-          }
-
-      function automaticSlides() {
-        slideIndex++;
-        showSlides(slideIndex);
-      }
-          function automaticSlides() {
-            slideIndex++;
-            showSlides(slideIndex);
-          }
-
-      function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        if (n > slides.length) {
-          slideIndex = 1;
-        }
-        if (n < 1) {
-          slideIndex = slides.length;
-        }
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        slides[slideIndex - 1].style.display = "block";
-        clearInterval(timer);
-        timer = setInterval(automaticSlides, 5000);
-      }
+          
 
       //aside-btn
       const menuButton = document.querySelector("#menu-button");
@@ -232,6 +243,12 @@
         }
       });
     </script>
-      
+          
+      <!-- </section> -->
+      <!--...-->
+      <article></article>
+      <article></article>
+    <!--...-->
+    <footer></footer>
   </body>
 </html>
