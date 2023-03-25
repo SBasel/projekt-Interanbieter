@@ -31,7 +31,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background: rgb(255, 255, 255);
+  background: whitesmoke;
   box-shadow: 10px 10px 10px #0661a2;
   
 }
@@ -67,15 +67,16 @@ header {
 .nav-link {
   text-decoration: none;
   color: #0096FF;
-  font-weight: bold;
-  }
+  font-family: "Poppins-Bold";
+}
 .nav-link:hover {
   color: #72FFFF
 }
 .nav-link-r {
   text-decoration: none;
   color: #0096FF;
-  font-weight: bold;
+  font-family: "Poppins-Bold";
+  
    }
 .nav-link-r:hover {
   color: #72FFFF;
@@ -253,6 +254,7 @@ aside {
 [class^="chevron"] {
   margin-left: 10px;
 }
+
 
 #menu-button {
   background-color: #0096ff;
