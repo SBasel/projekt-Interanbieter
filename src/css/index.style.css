@@ -114,7 +114,7 @@ h1 {
   position: relative;
   margin: auto;
 }
-section {
+.sec-hero  {
   margin-bottom: 1rem;
   background-image: url(../img/zachary-nelson-98Elr-LIvD8-unsplash.jpg);
   background-size: cover;
@@ -504,7 +504,7 @@ h1 {
   
   margin: auto;
 }
-section {
+.sec-hero  {
   margin-bottom: 1rem;
   background-image: url(../img/zachary-nelson-98Elr-LIvD8-unsplash.jpg);
   background-size: cover;
