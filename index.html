@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Bilinmeyen Mobilestore">
     <link rel="stylesheet" href="./src/css/index.style.css" />
     <link
       rel="stylesheet"
@@ -21,72 +22,30 @@
     <header>
 
         <nav class="nav-flex">
-          <div>
-            <img class="nav-logo" src="./src/favicon/favicon.ico" alt=""> 
-          </div>
           <div class="nav-left">
-            
-            
-            <a class="nav-link" href="#">Home</a>
-
-            <a class="nav-link" href="#">Angebote</a>
-
-            <a class="nav-link" href="#">Mobilfunk</a>
-
-            <a class="nav-link" href="#">Internet-Home</a>
-
+            <img class="nav-logo" src="./src/favicon/favicon.ico" alt="Logo Bilinmeyen"> 
+            <a class="nav-link" href="./index.html">Home</a>
+            <a class="nav-link" href="./linkpage.html">Angebote</a>
+            <a class="nav-link" href="./error404.html">Mobilfunk</a>
+            <a class="nav-link" href="./error404.html">Internet</a>
           </div>
+          <div class="nav-mid"></div>
           <div class="nav-right">
   
-            <a class="nav-link" href="#"><i class="fa-solid fa-user" style="color: #000000;"></i> About Us </a>
-            <a class="nav-link" href="#"><i class="fa-solid fa-bag-shopping" style="color: #050505;"></i>Warenkorb</a>
+            <a class="nav-link-r" href="aboutus.html"><i class="fa-solid fa-user" ></i> About Us </a>
+            <a class="nav-link-r" href="./error404.html"><i class="fa-solid fa-bag-shopping" ></i>Warenkorb</a>
           </div>
         </nav>
       </header>
 
     <main>
-      <!--+footer-->
-      <aside>
-        <button id="menu-button"><i class="fa fa-phone"></i></button>
-        <div id="menu-container">
-          <ul>
-            <li>
-              <a href="#"
-                >Bestellhotline 08001234567 <br />
-                Mo.-Fr. 8 - 20 Uhr
-                <i class="chevron fa-solid fa-chevron-right"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#"
-                >Weitere Kontaktmöglichkeiten<i
-                  class="chevron fa-solid fa-chevron-right"
-                ></i
-              ></a>
-            </li>
-            <li>
-              <a href="#">
-                Unsere virtuelle Assistenz unterstützt dich bei allen Fragen<i
-                  class="chevron fa-solid fa-chevron-right"
-                ></i
-              ></a>
-            </li>
-            <li>
-              <a href="#">
-                Bilinmeyen Service-Bereich Die schnelle Online-Hilfe<i
-                  class="chevron fa-solid fa-chevron-right"
-                ></i
-              ></a>
-            </li>
-          </ul>
-        </div>
-      </aside>
-
-      <aside></aside>
+      
       <!--Sebastian-->
 
-      <section>
-        <h1>Bilinmeyen</h1>
+      <section class="sec-hero">
+        <div class="sec-headline">
+        <h1><img class="imgh1" src="./src/favicon/favicon.ico" alt="Gruppe von Freunden"> ilinmeyen</h1>
+        </div>
         <div class="slideshow-container">
           <div class="mySlides fade">
             <div class="numbertext">
@@ -96,8 +55,9 @@
             </div>
             <img
               class="banner"
-              src="./src/img/handy2 (1).png"
+              src="./src/img/handy3.png"
               style="width: 100%"
+              alt="Iphone"
             />
           </div>
               <div class="mySlides fade">
@@ -109,7 +69,7 @@
             <img
               class="banner"
               src="./src/img/Laptop2.png"
-              style="width: 100%"
+              style="width: 100%" alt="Laptop"
             />
           </div>
               <div class="mySlides fade">
@@ -122,72 +82,146 @@
               class="banner"
               src="./src/img/tablet2.png"
               style="width: 100%"
+              alt="Ipad"
             />
           </div>
-                 <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
           <a class="next" onclick="plusSlides(1)">❯</a>
           <div class="section-icon">
-            <img
-              class="icons"
-              src="./src/icon-fonts/home_FILL0_wght400_GRAD0_opsz48.svg"
-              alt=""
-            />
-          </div>
+            <a  class="section-link" aria-label="phone" href="./error404.html"><i class="fa-solid fa-phone"></i></a>        
+            <a  class="section-link" aria-label="wifi" href="./error404.html"><i class="fa-solid fa-wifi"></i></a>  <a  class="section-link" aria-label="laptop" href="./error404.html"><i class="fa-solid fa-laptop"></i></a>
+        
         </div>
       </section>
     </main>
+    <article>
+      <div class="card">
+      <div class="content">
+        <div class="title">Studenten edition</div>
+        <div class="price">20€</div>
+        <div class="description">Studenten Tarif mit schnellem Internet</div>
+
+        
+      </div>
+
+      <div class="content">
+        <div class="title">Pro edition</div>
+        <div class="price">35€</div>
+        <div class="description">Pro Tarif mit schnellem Internet</div>
+
+        
+      </div>
+
+      <div class="content">
+        <div class="title">Premium edition</div>
+        <div class="price">50€</div>
+        <div class="description">Premium Tarif mit schnellem Internet</div>
+
+        
+      </div>
+      <div class="card">
+      <div class="content">
+        <div class="title">Studenten edition</div>
+        <div class="price">20€</div>
+        <div class="description">Studenten Tarif mit schnellem Internet</div>
+
+        
+      </div>
+
+      <div class="content">
+        <div class="title">Pro edition</div>
+        <div class="price">35€</div>
+        <div class="description">Pro Tarif mit schnellem Internet</div>
+
+      </div>
+      <div class="content">
+        <div class="title">Premium edition</div>
+        <div class="price">50€</div>
+        <div class="description">Premium Tarif mit schnellem Internet</div>
+      </div>
+      <div class="card">
+      <div class="content">
+        <div class="title">Studenten edition</div>
+        <div class="price">20€</div>
+        <div class="description">Studenten Tarif mit schnellem Internet</div>
+      </div>
+      <div class="content">
+        <div class="title">Pro edition</div>
+        <div class="price">35€</div>
+        <div class="description">Pro Tarif mit schnellem Internet</div>
+      </div>
+      <div class="content">
+        <div class="title">Premium edition</div>
+        <div class="price">50€</div>
+        <div class="description">Premium Tarif mit schnellem Internet</div>
+
+      </div>
+
+
+    </article>
     <!-- Links - Ömer Faruk -->
     <div class="links-footer">
       <div class="links">
         <div class="links-inner">
+          <div><h3>Neuigkeiten</h3>
           <ul>
-            <li><h3>Neuigkeiten</h3></li>
-            <li><a href="#">Kleine Unternehmen</a></li>
-            <li><a href="#">Visual Studio</a></li>
-            <li><a href="#">Rückgaben</a></li>
-            <li><a href="#">Abfallverwertung</a></li>
-            <li><a href="#">Weitere Informationen</a></li>
+            <li><a href="./error404.html">Kleine Unternehmen</a></li>
+            <li><a href="./error404.html">Visual Studio</a></li>
+            <li><a href="./error404.html">Rückgaben</a></li>
+            <li><a href="./error404.html">Abfallverwertung</a></li>
+            <li><a href="./error404.html">Weitere Informationen</a></li>
           </ul>
+          </div>
+          <div>
+           <h3>Bilinmeyen Store</h3>
           <ul>
-            <li><h3>Bilinmeyen Store</h3></li>
-            <li><a href="#">Kontoprofil</a></li>
-            <li><a href="#">Download Center</a></li>
-            <li><a href="#">Bilinmeyen Store-Support</a></li>
-            <li><a href="#">Rückgaben</a></li>
-            <li><a href="#">Bestellnachverfolgung</a></li>
+            <li><a href="./error404.html">Kontoprofil</a></li>
+            <li><a href="./error404.html">Download Center</a></li>
+            <li><a href="./error404.html">Bilinmeyen Store-Support</a></li>
+            <li><a href="./error404.html">Rückgaben</a></li>
+            <li><a href="./error404.html">Bestellnachverfolgung</a></li>
           </ul>
+          </div>
+          <div>
+          <h3>Bildungswesen</h3>
           <ul>
-            <li><h3>Bildungswesen</h3></li>
-            <li><a href="#">Bildung</a></li>
-            <li><a href="#">Geräte für den Bildungsbereich</a></li>
-            <li><a href="#">For Education</a></li>
-            <li><a href="#">Angebote für Studenten</a></li>
-            <li><a href="#"> Studenten</a></li>
+            <li><a href="./error404.html">Bildung</a></li>
+            <li><a href="./error404.html">Geräte für den Bildungsbereich</a></li>
+            <li><a href="./error404.html">For Education</a></li>
+            <li><a href="./error404.html">Angebote für Studenten</a></li>
+            <li><a href="./error404.html"> Studenten</a></li>
           </ul>
+          </div>
+          <div>
+         <h3>Unternehmen</h3>
           <ul>
-            <li><h3>Unternehmen</h3></li>
-            <li><a href="#">Cloud</a></li>
-            <li><a href="#">Security</a></li>
-            <li><a href="#">Dynamics</a></li>
-            <li><a href="#">Branchen</a></li>
-            <li><a href="#">Kleine Unternehmen</a></li>
+            <li><a href="./error404.html">Cloud</a></li>
+            <li><a href="./error404.html">Security</a></li>
+            <li><a href="./error404.html">Dynamics</a></li>
+            <li><a href="./error404.html">Branchen</a></li>
+            <li><a href="./error404.html">Kleine Unternehmen</a></li>
           </ul>
+          </div>
+          <div>
+          <h3>Entwicklung & IT</h3>
           <ul>
-            <li><h3>Entwicklung & IT</h3></li>
-            <li><a href="#">Developer Center</a></li>
-            <li><a href="#">Dokumentation</a></li>
-            <li><a href="#">AppSource</a></li>
-            <li><a href="#">Visual Studio</a></li>
-            <li><a href="#">Nachhaltigkeit</a></li>
+            <li><a href="./error404.html">Developer Center</a></li>
+            <li><a href="./error404.html">Dokumentation</a></li>
+            <li><a href="./error404.html">AppSource</a></li>
+            <li><a href="./error404.html">Visual Studio</a></li>
+            <li><a href="./error404.html">Nachhaltigkeit</a></li>
           </ul>
+          </div>
+          <div>
+          <h3>Im Unternehmen</h3>
           <ul>
-            <li><h3>Im Unternehmen</h3></li>
-            <li><a href="#">Jobs & Karriere</a></li>
-            <li><a href="#">Das Unternehmen Microsoft</a></li>
-            <li><a href="#">Unternehmensnachricten</a></li>
-            <li><a href="#">Datenschutz bei Microsoft</a></li>
-            <li><a href="#">Investoren</a></li>
+            <li><a href="./error404.html">Jobs & Karriere</a></li>
+            <li><a href="./error404.html">Das Unternehmen Microsoft</a></li>
+            <li><a href="./error404.html">Unternehmensnachricten</a></li>
+            <li><a href="./error404.html">Datenschutz bei Microsoft</a></li>
+            <li><a href="./error404.html">Investoren</a></li>
           </ul>
+          </div>
         </div>
       </div>
 
@@ -196,13 +230,12 @@
         <div class="footer-inner">
           <div><i class="fas fa-globe fa-2x"></i> Deutsch (Deutschland)</div>
           <ul>
-            <li><a href="#"> Abo kündigen</a></li>
-            <li><a href="#"> Impressum</a></li>
-            <li><a href="#">Datenschutz</a></li>
-            <li><a href="#">Cookies verwalten</a></li>
-            <li><a href="#">Nutzungsbedingungen</a></li>
-
-            <li><a href="#">&copy; Berlin 2023</a></li>
+            <li><a href="./error404.html"> Abo kündigen</a></li>
+            <li><a href="./error404.html"> Impressum</a></li>
+            <li><a href="./error404.html">Datenschutz</a></li>
+            <li><a href="./error404.html">Cookies verwalten</a></li>
+            <li><a href="./error404.html">Nutzungsbedingungen</a></li>
+            <li><a href="./error404.html">&copy; Berlin 2023</a></li>
           </ul>
         </div>
       </footer>
@@ -210,32 +243,32 @@
 
     <!-- aside-btn -->
     <aside>
-      <button id="menu-button"><i class="fa fa-phone"></i></button>
+      <button aria-label="faq and contact" id="menu-button"><i class="fa fa-phone"></i></button>
       <div id="menu-container">
         <ul>
           <li>
-            <a href="#"
+            <a href="./error404.html"
               >Bestellhotline 08001234567 <br />
               Mo.-Fr. 8 - 20 Uhr
               <i class="chevron fa-solid fa-chevron-right"></i
             ></a>
           </li>
           <li>
-            <a href="#"
+            <a href="./kontakt.index.html"
               >Weitere Kontaktmöglichkeiten<i
                 class="chevron fa-solid fa-chevron-right"
               ></i
             ></a>
           </li>
           <li>
-            <a href="#">
+            <a href="./error404.html">
               Unsere virtuelle Assistenz unterstützt dich bei allen Fragen<i
                 class="chevron fa-solid fa-chevron-right"
               ></i
             ></a>
           </li>
           <li>
-            <a href="#">
+            <a href="./error404.html">
               Bilinmeyen Service-Bereich Die schnelle Online-Hilfe<i
                 class="chevron fa-solid fa-chevron-right"
               ></i
@@ -287,7 +320,7 @@
         }
         slides[slideIndex - 1].style.display = "block";
         clearInterval(timer);
-        timer = setInterval(automaticSlides, 5000);
+        timer = setInterval(automaticSlides, 10000);
       }
 
       //aside-btn
@@ -303,11 +336,10 @@
       });
     </script>
           
-      </section>
+      <!-- </section> -->
       <!--...-->
       <article></article>
       <article></article>
-    </main>
     <!--...-->
     <footer></footer>
   </body>

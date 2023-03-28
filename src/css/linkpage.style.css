@@ -31,7 +31,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background: whitesmoke;
+  background: rgb(255, 255, 255);
   box-shadow: 10px 10px 10px #0661a2;
   
 }
@@ -48,7 +48,7 @@ header {
   display: flex;
   flex-direction: column;
   margin: 0.5rem;
-}
+ }
 .nav-right{
   display: flex;
   flex-direction: column;
@@ -67,17 +67,16 @@ header {
 .nav-link {
   text-decoration: none;
   color: #0096FF;
-  font-family: "Poppins-Bold";
-}
+  font-weight: bold;
+  }
 .nav-link:hover {
   color: #72FFFF
 }
 .nav-link-r {
   text-decoration: none;
   color: #0096FF;
-  font-family: "Poppins-Bold";
-  
-}
+  font-weight: bold;
+   }
 .nav-link-r:hover {
   color: #72FFFF;
 }
@@ -115,7 +114,7 @@ h1 {
   position: relative;
   margin: auto;
 }
-.sec-hero  {
+.sec-hero {
   margin-bottom: 1rem;
   background-image: url(../img/zachary-nelson-98Elr-LIvD8-unsplash.jpg);
   background-size: cover;
@@ -255,7 +254,6 @@ aside {
   margin-left: 10px;
 }
 
-
 #menu-button {
   background-color: #0096ff;
   color: #fff;
@@ -342,9 +340,6 @@ aside {
   align-items: center;
   justify-content: space-evenly;
 }
-.footer-inner ul{
-}
-
 .footer div {
   margin-bottom: 20px;
   padding: 2rem;
@@ -486,7 +481,7 @@ main{
   display: flex;
   justify-content: center;
 }
-h1 {
+section h1 {
   font-family: "Poppins-Bold";
   display: flex;
   font-size: 6rem;
@@ -506,7 +501,7 @@ h1 {
   
   margin: auto;
 }
-.sec-hero  {
+.sec-hero {
   margin-bottom: 1rem;
   background-image: url(../img/zachary-nelson-98Elr-LIvD8-unsplash.jpg);
   background-size: cover;
@@ -1034,4 +1029,3 @@ aside {
     width: 100%;
   }
 }
-

@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/css/aboutus.style.css" />
+    <meta name="description" content="Bilinmeyen Mobilestore">
+    <link rel="stylesheet" href="./src/css/kontakt.style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -12,17 +13,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>About Us</title>
+    <title>Bilinmeyen Home</title>
   </head>
   <body>
-    <!--Yahya Icons/Bilder/Logo-->
 
 
-       <header>
+    <header>
 
         <nav class="nav-flex">
           <div class="nav-left">
-            <img class="nav-logo" src="./src/favicon/favicon.ico" alt=""> 
+            <img class="nav-logo" src="./src/favicon/favicon.ico" alt="Logo Bilinmeyen"> 
             <a class="nav-link" href="./index.html">Home</a>
             <a class="nav-link" href="./linkpage.html">Angebote</a>
             <a class="nav-link" href="./error404.html">Mobilfunk</a>
@@ -36,105 +36,122 @@
           </div>
         </nav>
       </header>
-   
-      
-      <main class="main-ab">
-        <h1>Willkommen bei unserem umweltbewussten Mobilfunk-Startup!</h1>
-            <section class="section-ab">
-          <div>
-        <h2>Unsere Mission</h2>
-        <p>
-          Wir sind ein junges und dynamisches Team, das sich für die Umwelt und
-          Nachhaltigkeit einsetzt. Unser Ziel ist es, eine positive Veränderung
-          im Mobilfunksektor herbeizuführen und einen Beitrag zum Schutz unserer
-          Umwelt zu leisten. Wir möchten nicht nur unseren Kunden
-          umweltfreundliche Optionen anbieten, sondern auch unsere Verantwortung
-          als Unternehmen wahrnehmen, indem wir uns für den Schutz der Natur
-          einsetzen.
-        </p>
-        </div>
-     <div>
-        <h2>Unser Engagement für den Naturschutz</h2>
-        <p>
-          Unser Engagement für den Naturschutz geht über die 10% unseres
-          Unternehmensgewinns hinaus, die wir in Naturschutzprojekte in Afrika
-          investieren. Wir setzen uns auch für den Einsatz von erneuerbaren
-          Energien in unseren Geschäftsräumen ein, um unsere CO2-Emissionen zu
-          reduzieren und die Umweltbelastung zu minimieren.
-        </p>
-     </div>
-    
-    <div>
-      
-      <form>
-        <h3>Kontakt</h3>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
 
-        <label for="email">E-Mail:</label>
-        <input type="email" id="email" name="email" required />
-
-        <label for="message">Nachricht:</label>
-        <textarea id="message" name="message" required></textarea>
-
-        <button type="submit">Senden</button>
-      </form>
+    <main>
+      <!-- form -->
+      <div class="form">
+      <div class="container">
+        <form action="" method="post">
+          <h1>Sign In</h1>
+          <div class="input-field">
+            <div class="fullName">
+              <div class="firsName">
+                <label for="loginFirstName">Firstname</label>
+                <input
+                  type="text"
+                  name="loginFirstName"
+                  class="loginFirstName"
+                  placeholder="Firstname"
+                />
+              </div>
+              <div class="lastName">
+                <label for="loginLastName">Lastname</label>
+                <input
+                  type="text"
+                  name="loginLastName"
+                  class="loginLastName"
+                  placeholder="Lastname"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="input-field">
+            <label for="e-mail">E-mail</label><br />
+            <input type="email" name="e-mail" placeholder="E-mail" />
+          </div>
+          <div class="input-field">
+            <label for="password">Password</label><br />
+            <input type="password" name="password" placeholder="Password" />
+          </div>
+          <div class="input-field">
+            <div class="switch-field">
+              <label class="switch">
+                <input type="checkbox" checked />
+                <span class="slider round"></span>
+              </label>
+              <p>Accept the AGBs</p>
+            </div>
+          </div>
+          <div class="submit">
+            <input type="submit" value="Sign-in" class="signin-btn" />
+            <input type="submit" value="Login" class="login-btn" />
+          </div>
+        </form>
       </div>
-      <section>
-   </main>
-   <!-- Links - Ömer Faruk -->
+    </div>
+    <!-- Links - Ömer Faruk -->
     <div class="links-footer">
       <div class="links">
         <div class="links-inner">
+          <div><h3>Neuigkeiten</h3>
           <ul>
-            <li><h3>Neuigkeiten</h3></li>
             <li><a href="./error404.html">Kleine Unternehmen</a></li>
             <li><a href="./error404.html">Visual Studio</a></li>
             <li><a href="./error404.html">Rückgaben</a></li>
             <li><a href="./error404.html">Abfallverwertung</a></li>
             <li><a href="./error404.html">Weitere Informationen</a></li>
           </ul>
-          
+          </div>
+          <div>
+           <h3>Bilinmeyen Store</h3>
           <ul>
-            <li><h3>Bilinmeyen Store</h3></li>
             <li><a href="./error404.html">Kontoprofil</a></li>
             <li><a href="./error404.html">Download Center</a></li>
             <li><a href="./error404.html">Bilinmeyen Store-Support</a></li>
             <li><a href="./error404.html">Rückgaben</a></li>
             <li><a href="./error404.html">Bestellnachverfolgung</a></li>
           </ul>
+          </div>
+          <div>
+          <h3>Bildungswesen</h3>
           <ul>
-            <li><h3>Bildungswesen</h3></li>
             <li><a href="./error404.html">Bildung</a></li>
             <li><a href="./error404.html">Geräte für den Bildungsbereich</a></li>
             <li><a href="./error404.html">For Education</a></li>
             <li><a href="./error404.html">Angebote für Studenten</a></li>
             <li><a href="./error404.html"> Studenten</a></li>
           </ul>
+          </div>
+          <div>
+         <h3>Unternehmen</h3>
           <ul>
-            <li><h3>Unternehmen</h3></li>
             <li><a href="./error404.html">Cloud</a></li>
             <li><a href="./error404.html">Security</a></li>
             <li><a href="./error404.html">Dynamics</a></li>
             <li><a href="./error404.html">Branchen</a></li>
             <li><a href="./error404.html">Kleine Unternehmen</a></li>
           </ul>
+          </div>
+          <div>
+          <h3>Entwicklung & IT</h3>
           <ul>
-            <li><h3>Entwicklung & IT</h3></li>
             <li><a href="./error404.html">Developer Center</a></li>
             <li><a href="./error404.html">Dokumentation</a></li>
             <li><a href="./error404.html">AppSource</a></li>
             <li><a href="./error404.html">Visual Studio</a></li>
             <li><a href="./error404.html">Nachhaltigkeit</a></li>
           </ul>
+          </div>
+          <div>
+          <h3>Im Unternehmen</h3>
           <ul>
-            <li><h3>Im Unternehmen</h3></li>
             <li><a href="./error404.html">Jobs & Karriere</a></li>
             <li><a href="./error404.html">Das Unternehmen Microsoft</a></li>
             <li><a href="./error404.html">Unternehmensnachricten</a></li>
             <li><a href="./error404.html">Datenschutz bei Microsoft</a></li>
             <li><a href="./error404.html">Investoren</a></li>
           </ul>
+          </div>
         </div>
       </div>
 
@@ -156,7 +173,7 @@
 
     <!-- aside-btn -->
     <aside>
-      <button id="menu-button"><i class="fa fa-phone"></i></button>
+      <button aria-label="faq and contact" id="menu-button"><i class="fa fa-phone"></i></button>
       <div id="menu-container">
         <ul>
           <li>
@@ -167,7 +184,7 @@
             ></a>
           </li>
           <li>
-            <a href="./error404.html"
+            <a href="./kontakt.index.html"
               >Weitere Kontaktmöglichkeiten<i
                 class="chevron fa-solid fa-chevron-right"
               ></i
@@ -192,8 +209,6 @@
     </aside>
  
         <script>
-          
-
       //aside-btn
       const menuButton = document.querySelector("#menu-button");
       const menuContainer = document.querySelector("#menu-container");
@@ -206,13 +221,5 @@
         }
       });
     </script>
-          
-      </section>
-      <!--...-->
-      <article></article>
-      <article></article>
-    </main>
-    <!--...-->
-    <footer></footer>
   </body>
 </html>
