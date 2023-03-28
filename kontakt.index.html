@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Bilinmeyen Mobilestore">
-    <link rel="stylesheet" href="./src/css/index.style.css" />
+    <link rel="stylesheet" href="./src/css/kontakt.style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -16,7 +16,6 @@
     <title>Bilinmeyen Home</title>
   </head>
   <body>
-    <!--Yahya Icons/Bilder/Logo-->
 
 
     <header>
@@ -39,126 +38,57 @@
       </header>
 
     <main>
-      
-      <!--Sebastian-->
-
-      <section class="sec-hero">
-        <div class="sec-headline">
-        <h1><img class="imgh1" src="./src/favicon/favicon.ico" alt="Gruppe von Freunden"> ilinmeyen</h1>
-        </div>
-        <div class="slideshow-container">
-          <div class="mySlides fade">
-            <div class="numbertext">
-              <p class="texta">0,-€</p>
-              <p>Im Vertrag ...</p>
-              <button class="btn-a">Angebot</button>
+      <!-- form -->
+      <div class="form">
+      <div class="container">
+        <form action="" method="post">
+          <h1>Sign In</h1>
+          <div class="input-field">
+            <div class="fullName">
+              <div class="firsName">
+                <label for="loginFirstName">Firstname</label>
+                <input
+                  type="text"
+                  name="loginFirstName"
+                  class="loginFirstName"
+                  placeholder="Firstname"
+                />
+              </div>
+              <div class="lastName">
+                <label for="loginLastName">Lastname</label>
+                <input
+                  type="text"
+                  name="loginLastName"
+                  class="loginLastName"
+                  placeholder="Lastname"
+                />
+              </div>
             </div>
-            <img
-              class="banner"
-              src="./src/img/handy3.png"
-              style="width: 100%"
-              alt="Iphone"
-            />
           </div>
-              <div class="mySlides fade">
-            <div class="numbertext">
-              <p class="texta">0,-€</p>
-              <p>Im Vertrag ...</p>
-              <button class="btn-a">Angebot</button>
+          <div class="input-field">
+            <label for="e-mail">E-mail</label><br />
+            <input type="email" name="e-mail" placeholder="E-mail" />
+          </div>
+          <div class="input-field">
+            <label for="password">Password</label><br />
+            <input type="password" name="password" placeholder="Password" />
+          </div>
+          <div class="input-field">
+            <div class="switch-field">
+              <label class="switch">
+                <input type="checkbox" checked />
+                <span class="slider round"></span>
+              </label>
+              <p>Accept the AGBs</p>
             </div>
-            <img
-              class="banner"
-              src="./src/img/Laptop2.png"
-              style="width: 100%" alt="Laptop"
-            />
           </div>
-              <div class="mySlides fade">
-            <div class="numbertext">
-              <p class="texta">0,-€</p>
-              <p>Im Vertrag ...</p>
-              <button class="btn-a">Angebot</button>
-            </div>
-            <img
-              class="banner"
-              src="./src/img/tablet2.png"
-              style="width: 100%"
-              alt="Ipad"
-            />
+          <div class="submit">
+            <input type="submit" value="Sign-in" class="signin-btn" />
+            <input type="submit" value="Login" class="login-btn" />
           </div>
-          <a class="prev" onclick="plusSlides(-1)">❮</a>
-          <a class="next" onclick="plusSlides(1)">❯</a>
-          <div class="section-icon">
-            <a  class="section-link" aria-label="phone" href="./error404.html"><i class="fa-solid fa-phone"></i></a>        
-            <a  class="section-link" aria-label="wifi" href="./error404.html"><i class="fa-solid fa-wifi"></i></a>  <a  class="section-link" aria-label="laptop" href="./error404.html"><i class="fa-solid fa-laptop"></i></a>
-        
-        </div>
-      </section>
-    </main>
-    <article>
-      <div class="card">
-      <div class="content">
-        <div class="title">Studenten edition</div>
-        <div class="price">20€</div>
-        <div class="description">Studenten Tarif mit schnellem Internet</div>
-
-        
+        </form>
       </div>
-
-      <div class="content">
-        <div class="title">Pro edition</div>
-        <div class="price">35€</div>
-        <div class="description">Pro Tarif mit schnellem Internet</div>
-
-        
-      </div>
-
-      <div class="content">
-        <div class="title">Premium edition</div>
-        <div class="price">50€</div>
-        <div class="description">Premium Tarif mit schnellem Internet</div>
-
-        
-      </div>
-      <div class="card">
-      <div class="content">
-        <div class="title">Studenten edition</div>
-        <div class="price">20€</div>
-        <div class="description">Studenten Tarif mit schnellem Internet</div>
-
-        
-      </div>
-
-      <div class="content">
-        <div class="title">Pro edition</div>
-        <div class="price">35€</div>
-        <div class="description">Pro Tarif mit schnellem Internet</div>
-
-      </div>
-      <div class="content">
-        <div class="title">Premium edition</div>
-        <div class="price">50€</div>
-        <div class="description">Premium Tarif mit schnellem Internet</div>
-      </div>
-      <div class="card">
-      <div class="content">
-        <div class="title">Studenten edition</div>
-        <div class="price">20€</div>
-        <div class="description">Studenten Tarif mit schnellem Internet</div>
-      </div>
-      <div class="content">
-        <div class="title">Pro edition</div>
-        <div class="price">35€</div>
-        <div class="description">Pro Tarif mit schnellem Internet</div>
-      </div>
-      <div class="content">
-        <div class="title">Premium edition</div>
-        <div class="price">50€</div>
-        <div class="description">Premium Tarif mit schnellem Internet</div>
-
-      </div>
-
-
-    </article>
+    </div>
     <!-- Links - Ömer Faruk -->
     <div class="links-footer">
       <div class="links">
@@ -279,50 +209,6 @@
     </aside>
  
         <script>
-          let slideIndex = 1;
-          let timer;
-          showSlides(slideIndex);
-
-      function plusSlides(n) {
-        showSlides((slideIndex += n));
-      }
-          function plusSlides(n) {
-            showSlides((slideIndex += n));
-          }
-
-      function currentSlide(n) {
-        showSlides((slideIndex = n));
-      }
-          function currentSlide(n) {
-            showSlides((slideIndex = n));
-          }
-
-      function automaticSlides() {
-        slideIndex++;
-        showSlides(slideIndex);
-      }
-          function automaticSlides() {
-            slideIndex++;
-            showSlides(slideIndex);
-          }
-
-      function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        if (n > slides.length) {
-          slideIndex = 1;
-        }
-        if (n < 1) {
-          slideIndex = slides.length;
-        }
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        slides[slideIndex - 1].style.display = "block";
-        clearInterval(timer);
-        timer = setInterval(automaticSlides, 10000);
-      }
-
       //aside-btn
       const menuButton = document.querySelector("#menu-button");
       const menuContainer = document.querySelector("#menu-container");
@@ -335,12 +221,5 @@
         }
       });
     </script>
-          
-      <!-- </section> -->
-      <!--...-->
-      <article></article>
-      <article></article>
-    <!--...-->
-    <footer></footer>
   </body>
 </html>
