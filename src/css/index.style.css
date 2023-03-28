@@ -48,7 +48,7 @@ header {
   display: flex;
   flex-direction: column;
   margin: 0.5rem;
- }
+}
 .nav-right{
   display: flex;
   flex-direction: column;
@@ -77,7 +77,7 @@ header {
   color: #0096FF;
   font-family: "Poppins-Bold";
   
-   }
+}
 .nav-link-r:hover {
   color: #72FFFF;
 }
