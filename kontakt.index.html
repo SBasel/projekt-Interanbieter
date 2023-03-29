@@ -173,7 +173,7 @@
 
     <!-- aside-btn -->
     <aside>
-      <button aria-label="faq and contact" id="menu-button"><i class="fa fa-phone"></i></button>
+      <button aria-label="faq and contact" id="menu-button"><i class="fa fa-phone" onclick="changeIcon(this)"></i></button>
       <div id="menu-container">
         <ul>
           <li>
@@ -220,6 +220,9 @@
           menuContainer.style.display = "block";
         }
       });
+
+      // btn-changer
+      changeIcon = (icon) => icon.classList.toggle("fa-times")
     </script>
   </body>
 </html>
