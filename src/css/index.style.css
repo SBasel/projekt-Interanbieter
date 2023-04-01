@@ -3,26 +3,22 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 @font-face {
   font-family: "Poppins";
   src: url("../fonts/Poppins-Medium.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: "Poppins-Bold";
   src: url("../fonts/Poppins-Bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
-
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
 }
-
 header {
   position: sticky;
   width: 100%;
@@ -30,7 +26,6 @@ header {
   z-index: 2;
   margin-bottom: 0.5rem;
 }
-
 .nav-flex {
   display: flex;
   flex-direction: row;
@@ -38,21 +33,23 @@ header {
   background: whitesmoke;
   box-shadow: 10px 10px 10px #0661a2;
 }
-
 .nav-logo {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 35px;
-  border: solid 1px whitesmoke;
+  width: 70px;
+  border: solid 4px whitesmoke;
   border-radius: 20%;
   margin-right: 1rem;
 }
-
 .nav-left {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin: 0.5rem;
+}
+.nav-left-link{
+  display: flex;
+  flex-direction: column;
 }
 
 .nav-right {
@@ -60,40 +57,32 @@ header {
   flex-direction: column;
   margin: 0.5rem;
 }
-
 .nav-link i {
   color: #0096ff;
   padding: 0.5rem;
 }
-
 .nav-link i:hover {
   color: #0096ff;
 }
-
 .nav-link i::after {
   content: "";
 }
-
 .nav-link {
   text-decoration: none;
   color: #0096ff;
   font-family: "Poppins-Bold";
 }
-
 .nav-link:hover {
   color: #72ffff;
 }
-
 .nav-link-r {
   text-decoration: none;
   color: #0096ff;
   font-family: "Poppins-Bold";
 }
-
 .nav-link-r:hover {
   color: #72ffff;
 }
-
 .nav-link-r::before {
   counter-reset: "";
 }
@@ -102,12 +91,10 @@ header {
 main {
   width: 100%;
 }
-
 .sec-headline {
   display: flex;
   justify-content: center;
 }
-
 h1 {
   font-family: "Poppins-Bold";
   display: flex;
@@ -116,7 +103,6 @@ h1 {
   color: rgba(255, 255, 255, 0.999);
   text-shadow: 3px 3px 4px #060606;
 }
-
 .imgh1 {
   display: flex;
   height: 3.5rem;
@@ -124,13 +110,11 @@ h1 {
   border-radius: 20%;
   margin-top: 0.5rem;
 }
-
 .slideshow-container {
   max-width: 62.5rem;
   position: relative;
   margin: auto;
 }
-
 .sec-hero {
   margin-bottom: 1rem;
   background-image: url(../img/zachary-nelson-98Elr-LIvD8-unsplash.jpg);
@@ -138,7 +122,6 @@ h1 {
   background-position: center;
   box-shadow: 10px 10px 10px #0661a2;
 }
-
 .numbertext {
   position: absolute;
   top: 1rem;
@@ -148,23 +131,20 @@ h1 {
   padding: 8px;
   text-shadow: 3px 3px 4px #060606;
 }
-
 .texta {
   color: #0096ff;
   font-size: 1.5rem;
   font-weight: bold;
   text-shadow: 3px 3px 4px #060606;
 }
-
 .btn-a {
-  --color: #0095ff;
+  --color: #0096ff;
   display: inline-block;
   width: 6em;
   height: 2.6em;
   line-height: 2.5em;
   margin-top: 1rem;
   position: relative;
-
   top: 3rem;
   overflow: hidden;
   border: 2px solid var(--color);
@@ -175,7 +155,6 @@ h1 {
   font-weight: 500;
   color: var(--color);
 }
-
 .btn-a:before {
   content: "";
   position: absolute;
@@ -205,18 +184,15 @@ h1 {
   color: #72ffff;
   transition: background 3s;
 }
-
 .mySlides img {
   border-radius: 20px;
   box-shadow: inset 0px 0px 100px -13px rgb(0, 150, 255), 5px 5px 10px #0661a2;
 }
-
 .section-icon {
   display: flex;
   margin: 20px;
   justify-content: space-evenly;
 }
-
 .section-link {
   text-decoration: none;
   color: #0096ff;
@@ -224,48 +200,36 @@ h1 {
   margin: 1em;
   text-shadow: 3px 3px 4px #060606;
 }
-
 .section-link:hover {
   color: #72ffff;
 }
-
 .section-link i {
   font-size: 4rem;
 }
-
 .prev,
 .next {
   display: none;
   cursor: pointer;
-  position: relative;
-  /* Alberts änderungsvorschlag: top mit 40% dazusetzen damit der button ; in der mitte des containers ist+ Height dazu */
-  top: 40%;
-  height: fit-content;
-  /* Vorher: , 
-  ; Alberts änderungvorschlag  */
-
-  /* bottom: 50%; */
+  position: absolute;
+  bottom: 50%;
   width: auto;
-  /* padding: 16px; */
+  padding: 16px;
   margin-top: -22px;
   color: white;
   font-weight: bold;
-  /* font-size: 18px; */
+  font-size: 18px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
-
 .next {
   right: 0px;
   border-radius: 3px 0 0 3px;
 }
-
 .prev:hover,
 .next:hover {
   background-color: #0096ff;
 }
-
 .text {
   color: #f2f2f2;
   font-size: 15px;
@@ -275,8 +239,6 @@ h1 {
   width: 100%;
   text-align: center;
 }
-
-/*  Albert/Artikel cards  */
 article.outer {
   display: flex;
   justify-content: center;
@@ -417,8 +379,6 @@ article.outer {
   height: auto;
 }
 
-/*  Albert/Artikel cards  */
-
 aside {
   position: fixed;
   bottom: 50px;
@@ -426,12 +386,10 @@ aside {
   z-index: 999;
   line-height: 1.3em;
 }
-
 .links-footer a {
   text-decoration: none;
   color: #616161;
 }
-
 [class^="chevron"] {
   margin-left: 10px;
 }
@@ -486,18 +444,15 @@ aside {
   border-radius: 10px;
   transition: all 0.5s ease-in-out;
 }
-
 /* icon effect */
 #menu-container li {
   position: relative;
 }
-
 #menu-container li:hover [class^="chevron"] {
   transition: all 0.3s ease;
   transform: translateX(10px);
   font-size: medium;
 }
-
 /* Links */
 .links {
   width: 100%;
@@ -505,16 +460,13 @@ aside {
   color: #616161;
   font-size: 12px;
 }
-
 .links-inner {
   list-style: none;
   padding: 0;
 }
-
 .links li {
   line-height: 2;
 }
-
 /* Footer */
 .footer {
   background: #f2f2f2;
@@ -527,6 +479,8 @@ aside {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+}
+.footer-inner ul {
 }
 
 .footer div {
@@ -568,88 +522,32 @@ aside {
   from {
     opacity: 0.4;
   }
-
   to {
     opacity: 1;
   }
 }
-
-@media only screen and (min-width: 486px) {
-  .col-1 {
-    width: 8.33%;
-  }
-
-  .col-2 {
-    width: 16.66%;
-  }
-
-  .col-3 {
-    width: 25%;
-  }
-
-  .col-4 {
-    width: 33.33%;
-  }
-
-  .col-5 {
-    width: 41.66%;
-  }
-
-  .col-6 {
-    width: 50%;
-  }
-
-  .col-7 {
-    width: 58.33%;
-  }
-
-  .col-8 {
-    width: 66.66%;
-  }
-
-  .col-9 {
-    width: 75%;
-  }
-
-  .col-10 {
-    width: 83.33%;
-  }
-
-  .col-11 {
-    width: 91.66%;
-  }
-
-  .col-12 {
-    width: 100%;
-  }
-}
-
 @media only screen and (min-width: 820px) {
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-
   @font-face {
     font-family: "Poppins";
     src: url("../fonts/Poppins-Medium.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
   }
-
   @font-face {
     font-family: "Poppins-Bold";
     src: url("../fonts/Poppins-Bold.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
   }
-
   body {
     font-family: "Poppins", sans-serif;
     margin: 0;
   }
-
   header {
     position: sticky;
     width: 100%;
@@ -657,7 +555,6 @@ aside {
     z-index: 2;
     margin-bottom: 0.5rem;
   }
-
   .nav-flex {
     display: flex;
     justify-content: space-between;
@@ -665,19 +562,21 @@ aside {
     background: rgb(255, 255, 255);
     box-shadow: 10px 10px 10px #0661a2;
   }
-
   .nav-logo {
     width: 60px;
     border: solid 4px whitesmoke;
     border-radius: 20%;
   }
-
   .nav-left {
     display: flex;
     flex-direction: row;
     padding: 0;
     margin: 0.5;
   }
+  .nav-left-link{
+  display: flex;
+  flex-direction: row;
+}
 
   .nav-right {
     display: flex;
@@ -685,42 +584,34 @@ aside {
     padding: 0;
     margin: 0.5;
   }
-
   .nav-link i {
     color: #0096ff;
     padding: 0.5rem;
   }
-
   .nav-link i:hover {
     color: #0096ff;
   }
-
   .nav-link i::after {
     content: "";
   }
-
   .nav-link {
     text-decoration: none;
     color: #0096ff;
     font-weight: bold;
     margin: 1em;
   }
-
   .nav-link:hover {
     color: #72ffff;
   }
-
   .nav-link-r {
     text-decoration: none;
     color: #0096ff;
     font-weight: bold;
     margin: 1em;
   }
-
   .nav-link-r:hover {
     color: #72ffff;
   }
-
   .nav-link-r::before {
     counter-reset: "";
   }
@@ -729,13 +620,11 @@ aside {
   main {
     width: 100%;
   }
-
   .sec-headline {
     width: 100%;
     display: flex;
     justify-content: center;
   }
-
   h1 {
     font-family: "Poppins-Bold";
     display: flex;
@@ -743,7 +632,6 @@ aside {
     color: rgba(255, 255, 255, 0.999);
     text-shadow: 3px 3px 4px #060606;
   }
-
   .imgh1 {
     display: flex;
     height: 6rem;
@@ -751,13 +639,11 @@ aside {
     border-radius: 20%;
     margin-top: 1rem;
   }
-
   .slideshow-container {
     max-width: 62.5rem;
 
     margin: auto;
   }
-
   .sec-hero {
     margin-bottom: 1rem;
     background-image: url(../img/zachary-nelson-98Elr-LIvD8-unsplash.jpg);
@@ -765,7 +651,6 @@ aside {
     background-position: center;
     box-shadow: 10px 10px 10px #0661a2;
   }
-
   .numbertext {
     position: absolute;
     top: 1rem;
@@ -775,14 +660,12 @@ aside {
     padding: 8px;
     text-shadow: 3px 3px 4px #060606;
   }
-
   .texta {
     color: #0096ff;
     font-size: 1.5rem;
     font-weight: bold;
     text-shadow: 3px 3px 4px #060606;
   }
-
   .btn-a {
     --color: #0096ff;
     display: inline-block;
@@ -801,7 +684,6 @@ aside {
     font-weight: 500;
     color: var(--color);
   }
-
   .btn-a:before {
     content: "";
     position: absolute;
@@ -831,18 +713,15 @@ aside {
     color: #72ffff;
     transition: background 3s;
   }
-
   .mySlides img {
     border-radius: 20px;
     box-shadow: inset 0px 0px 100px -13px rgb(0, 150, 255), 5px 5px 10px #0661a2;
   }
-
   .section-icon {
     display: flex;
     margin: 20px;
     justify-content: space-evenly;
   }
-
   .section-link {
     text-decoration: none;
     color: #0096ff;
@@ -850,15 +729,12 @@ aside {
     margin: 1em;
     text-shadow: 3px 3px 4px #060606;
   }
-
   .section-link:hover {
     color: #72ffff;
   }
-
   .section-link i {
     font-size: 4rem;
   }
-
   .prev,
   .next {
     display: block;
@@ -875,17 +751,14 @@ aside {
     border-radius: 0 3px 3px 0;
     user-select: none;
   }
-
   .next {
     right: 0px;
     border-radius: 3px 0 0 3px;
   }
-
   .prev:hover,
   .next:hover {
     background-color: #0096ff;
   }
-
   .text {
     color: #f2f2f2;
     font-size: 15px;
@@ -894,5 +767,216 @@ aside {
     bottom: 8px;
     width: 100%;
     text-align: center;
+  }
+  .card {
+    width: 61.66%;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+
+  .content {
+    background: rgb(0, 150, 255);
+    background: linear-gradient(
+      60deg,
+      rgba(0, 150, 255, 1) 10%,
+      rgba(114, 255, 255, 1) 37%,
+      rgba(0, 150, 255, 1) 100%
+    );
+    box-shadow: 10px 10px 20px #0661a2;
+    box-shadow: 10px 10px 20px rgb(21, 129, 206, 0.5);
+    padding: 20px;
+    margin-bottom: 0.5rem;
+  }
+
+  .content .price {
+    color: white;
+    font-weight: 800;
+    font-size: 50px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.42);
+  }
+
+  .content .description {
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .content .title {
+    font-weight: 800;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.64);
+    margin-top: 10px;
+    font-size: 25px;
+    letter-spacing: 1px;
+  }
+
+  .content button {
+    border: none;
+    outline: none;
+    color: rgb(255 255 255);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.75rem;
+    padding: 0.75rem 1.5rem;
+    background-color: rgb(33 150 243);
+    border-radius: 0.5rem;
+    width: 30%;
+    text-shadow: 0px 4px 18px #2c3442;
+  }
+
+  /*---aside--*/
+  /* aside btn */
+
+  aside {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    z-index: 999;
+    line-height: 1.3em;
+  }
+
+  aside button i {
+    padding: 12px;
+  }
+
+  .links-footer a {
+    text-decoration: none;
+    color: #616161;
+  }
+  [class^="chevron"] {
+    margin-left: 10px;
+  }
+
+  #menu-button {
+    background-color: #0096ff;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    transform: rotate(-90deg);
+  }
+
+  #menu-button:hover {
+    transform: scale(1.1);
+  }
+
+  #menu-container {
+    position: absolute;
+    bottom: 60px;
+    right: 0;
+    width: 200px;
+    background-color: #72ffffd8;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    display: none;
+  }
+
+  #menu-container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #menu-container ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+    font-weight: 500;
+  }
+
+  #menu-container ul li a:hover {
+    background-color: #5800ff;
+    color: #fff;
+  }
+
+  /* Links */
+  .links {
+    background: #f2f2f2;
+    color: #616161;
+    font-size: 12px;
+    padding: 35px 0;
+  }
+
+  .links-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .links li {
+    line-height: 2.5;
+  }
+
+  /* Footer */
+  .footer {
+    background: #f2f2f2;
+    color: #616161;
+    font-size: 12px;
+    padding: 20px 0;
+  }
+
+  .footer-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer div {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .footer div i {
+    margin-right: 10px;
+  }
+
+  .footer ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer li {
+    margin: 0 30px 20px 0;
+  }
+
+  /* links and footer */
+  .links-footer {
+    display: block;
+  }
+
+  .links-footer a:hover {
+    color: black;
+  }
+
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
   }
 }
