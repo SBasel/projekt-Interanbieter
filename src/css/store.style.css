@@ -16,7 +16,6 @@
 * {
   box-sizing: border-box;
   font-family: Raleway;
-  color: #777;
 }
 
 html,
@@ -232,6 +231,7 @@ main {
   display: flex;
   flex-direction: column;
   margin: 30px;
+  padding: 0.5rem;
 border-radius: 13px;
 background: #e0e0e0;
 box-shadow: inset 36px -36px 42px #c1c1c1,
@@ -337,6 +337,7 @@ box-shadow: inset 36px -36px 42px #c1c1c1,
   background-color: #eee;
   color: #333;
   padding: 0;
+  padding-bottom: 3px;
   text-align: center;
   font-size: 1.2em;
   margin-right: 25px;
