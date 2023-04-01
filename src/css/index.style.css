@@ -191,6 +191,7 @@ h1 {
 .section-icon {
   display: flex;
   margin: 20px;
+  padding: 20px;
   justify-content: space-evenly;
 }
 .section-link {
@@ -262,6 +263,7 @@ article.outer {
   align-items: center;
   width: 100%;
   height: auto;
+  margin-bottom: 0.5rem;
 }
 
 .article-inner h2 {
@@ -294,7 +296,7 @@ article.outer {
   font-family: "Poppins", sans-serif;
   justify-content: center;
   text-align: center;
-
+  backface-visibility: hidden;
   background: rgb(0, 150, 255);
   background: radial-gradient(
     circle,
@@ -330,6 +332,10 @@ article.outer {
 
 .slider-box:active {
   transform: scale(0.95) rotateZ(1.7deg);
+}
+.slider-box:hover h3{
+  transform: scale(1.05);
+ 
 }
 
 .slider-content {
@@ -720,6 +726,7 @@ aside {
   .section-icon {
     display: flex;
     margin: 20px;
+  
     justify-content: space-evenly;
   }
   .section-link {

@@ -232,10 +232,11 @@ main {
   flex-direction: column;
   margin: 30px;
   padding: 0.5rem;
-border-radius: 13px;
-background: #e0e0e0;
-box-shadow: inset 36px -36px 42px #c1c1c1,
-            inset -36px 36px 42px #ffffff;
+  border-radius: 20px;
+box-shadow:  5px 5px 10px #bebebe,
+             -5px -5px 10px #ffffff;
+
+
 }
 
 .shop-item-title {
