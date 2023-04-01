@@ -333,8 +333,7 @@ article.outer {
   transform: scale(0.95) rotateZ(1.7deg);
 }
 .slider-box:hover h3{
-  transform: scale(1.05);
- 
+  color: #72ffff;
 }
 
 .slider-content {
